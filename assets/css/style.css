@@ -321,6 +321,7 @@ a {
 
 .hero-content h1 span {
   display: block;
+  white-space: nowrap;
   color: var(--accent);
 }
 
