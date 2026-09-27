@@ -1419,5 +1419,34 @@ a {
   .footer-bottom {
     text-align: center;
   }
+  
 
+}
+
+/* ================================
+   Breadcrumb
+   ================================ */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  color: #667085;
+}
+
+.breadcrumb a {
+  color: #667085;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span[aria-current="page"] {
+  color: #101828;
+  font-weight: 600;
 }
