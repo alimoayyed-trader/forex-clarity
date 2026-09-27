@@ -1450,3 +1450,12 @@ a {
   color: #101828;
   font-weight: 600;
 }
+
+/* ================================
+   About Tagline
+   ================================ */
+
+.about-grid h2 span {
+  display: inline;
+  color: var(--accent);
+}
