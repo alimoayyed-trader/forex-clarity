@@ -1463,3 +1463,145 @@ a {
   display: inline;
   color: var(--accent);
 }
+
+```css
+/* ================================
+   Team Section
+   ================================ */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.team-card-placeholder {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      135deg,
+      var(--surface-soft),
+      var(--accent-light)
+    );
+  border-bottom: 1px solid var(--line);
+}
+
+.team-card-placeholder span {
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+
+.team-card-content {
+  padding: 32px;
+}
+
+.team-card-content h3 {
+  margin-top: 6px;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.team-role {
+  margin-top: 8px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.team-description {
+  margin-top: 18px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.team-focus,
+.team-titles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.team-focus {
+  margin-top: 22px;
+}
+
+.team-focus span,
+.team-titles span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.team-focus span {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.team-background {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.team-background p + p {
+  margin-top: 8px;
+}
+
+.team-background strong {
+  color: var(--text);
+}
+
+.team-titles {
+  margin-top: 22px;
+}
+
+.team-titles span {
+  background: var(--surface-soft);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+
+/* ================================
+   Responsive
+   ================================ */
+
+@media (max-width: 800px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .team-card-content {
+    padding: 24px;
+  }
+
+  .team-card-placeholder {
+    height: 200px;
+  }
+
+  .team-card-content h3 {
+    font-size: 26px;
+  }
+}
+```
+
