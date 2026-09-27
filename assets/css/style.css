@@ -1050,14 +1050,19 @@ a {
 
 .about-grid {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 90px;
 }
 
 .about-grid h2 {
   max-width: 600px;
+
   font-size: clamp(38px, 4.5vw, 58px);
+
   line-height: 1.05;
+
   letter-spacing: -0.04em;
 }
 
@@ -1075,7 +1080,6 @@ a {
 .about-grid > div:last-child p + p {
   margin-top: 18px;
 }
-
 
 /* =========================
    CTA
