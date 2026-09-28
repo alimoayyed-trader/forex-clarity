@@ -1603,5 +1603,16 @@ a {
     font-size: 26px;
   }
 }
-```
+
+.article-byline {
+  margin-top: 16px;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.article-byline span {
+  font-weight: 600;
+  color: var(--text);
+}
 
