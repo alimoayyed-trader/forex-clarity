@@ -1615,3 +1615,16 @@ a {
   font-weight: 600;
   color: var(--text);
 }
+
+
+/* Links inside article sections */
+article.section-light .container a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+article.section-light .container a:hover {
+  text-decoration-thickness: 2px;
+}
+
