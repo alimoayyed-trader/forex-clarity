@@ -311,6 +311,24 @@
         padding: 1rem;
       }
     }
+    /* Related article links */
+.pip-related a {
+  color: var(--accent-dark, #2563eb);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease;
+}
+
+.pip-related a:hover {
+  color: var(--accent, #1d4ed8);
+}
+
+.pip-related a:focus-visible {
+  outline: 2px solid var(--accent, #2563eb);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
   </style>
 </head>
 
