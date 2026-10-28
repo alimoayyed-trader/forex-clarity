@@ -5,35 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>What Is a Pip in Forex? Definition and Examples | Forex Clarity</title>
-
-  <meta
-    name="description"
-    content="Learn what a pip is in forex, how to calculate pip movements, how JPY pairs differ, and how pips relate to spreads, position size, and trading risk."
-  >
-
+  <meta name="description" content="Learn what a pip is in forex, how to calculate pip movements, understand JPY pairs and fractional pips, and see how pip value relates to trading risk.">
   <meta name="robots" content="index, follow">
 
-  <link
-    rel="canonical"
-    href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html"
-  >
-
-  <meta
-    property="og:title"
-    content="What Is a Pip in Forex? Definition and Examples"
-  >
-
-  <meta
-    property="og:description"
-    content="Understand forex pips with clear price examples, JPY pair differences, and practical risk calculations."
-  >
+  <link rel="canonical" href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html">
 
   <meta property="og:type" content="article">
-
-  <meta
-    property="og:url"
-    content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html"
-  >
+  <meta property="og:title" content="What Is a Pip in Forex? Definition and Examples">
+  <meta property="og:description" content="Understand forex pips with practical price examples, JPY pair differences, and risk calculations.">
+  <meta property="og:url" content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html">
 
   <link rel="stylesheet" href="../assets/css/style.css">
 
@@ -70,13 +50,18 @@
     "@type": "Article",
     "@id": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html#article",
     "headline": "What Is a Pip in Forex? Definition and Examples",
-    "description": "Learn what a pip is in forex, how to calculate pip movements, how JPY pairs differ, and how pips relate to spreads, position size, and trading risk.",
+    "description": "Learn what a pip is in forex, how to calculate pip movements, understand JPY pairs and fractional pips, and see how pip value relates to trading risk.",
     "url": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-pip.html",
-    "author": {
-      "@type": "Person",
-      "@id": "https://alimoayyed-trader.github.io/forex-clarity/about/#ali-moayyed",
-      "name": "Ali Moayyed"
-    },
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Ali Moayyed"
+      },
+      {
+        "@type": "Person",
+        "name": "Nasrin Kheyrdost"
+      }
+    ],
     "publisher": {
       "@type": "Organization",
       "@id": "https://alimoayyed-trader.github.io/forex-clarity/#organization",
@@ -89,16 +74,251 @@
     }
   }
   </script>
+
+  <style>
+    /* Pip article: use the existing site brand and shared stylesheet. */
+
+    .pip-breadcrumbs {
+      padding: 1rem 0;
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .pip-breadcrumbs a {
+      color: var(--accent-dark, #2563eb);
+      text-underline-offset: .18em;
+    }
+
+    .pip-hero .hero-content {
+      max-width: 850px;
+    }
+
+    .pip-byline {
+      margin: 1rem 0;
+      color: var(--text-soft, #667085);
+      font-size: .92rem;
+    }
+
+    .pip-article {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .pip-container {
+      width: min(1120px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .pip-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 245px;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+    }
+
+    .pip-content {
+      min-width: 0;
+      max-width: 780px;
+      font-size: 1.02rem;
+      line-height: 1.85;
+      overflow-wrap: anywhere;
+    }
+
+    .pip-content h2 {
+      margin: 3rem 0 1rem;
+      line-height: 1.3;
+      scroll-margin-top: 2rem;
+    }
+
+    .pip-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .pip-content h3 {
+      margin: 2rem 0 .6rem;
+      line-height: 1.4;
+    }
+
+    .pip-content p,
+    .pip-content li {
+      color: var(--text-soft, #667085);
+    }
+
+    .pip-content p {
+      margin: 1rem 0;
+    }
+
+    .pip-content ul,
+    .pip-content ol {
+      padding-inline-start: 1.5rem;
+    }
+
+    .pip-content li {
+      margin: .55rem 0;
+    }
+
+    .pip-content strong {
+      color: var(--text, #202938);
+    }
+
+    .pip-content a {
+      text-underline-offset: .18em;
+    }
+
+    .pip-toc,
+    .pip-note,
+    .pip-example,
+    .pip-formula,
+    .pip-warning {
+      padding: 1.15rem 1.25rem;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+
+    .pip-toc {
+      position: sticky;
+      top: 1.25rem;
+      margin: 0;
+    }
+
+    .pip-toc h2,
+    .pip-toc h3 {
+      margin: 0 0 .8rem;
+      font-size: 1.05rem;
+    }
+
+    .pip-toc ol {
+      margin: 0;
+      padding-inline-start: 1.25rem;
+    }
+
+    .pip-toc li {
+      margin: .5rem 0;
+      font-size: .92rem;
+      line-height: 1.6;
+    }
+
+    .pip-note {
+      background: var(--surface, #f8fafc);
+    }
+
+    .pip-example {
+      background: var(--surface, #f8fafc);
+    }
+
+    .pip-formula {
+      background: var(--surface, #f8fafc);
+      text-align: center;
+    }
+
+    .pip-formula p {
+      margin: .35rem 0;
+    }
+
+    .pip-formula .formula {
+      color: var(--text, #202938);
+      font-size: 1.1rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .pip-warning {
+      border-inline-start: 4px solid var(--accent, #2563eb);
+    }
+
+    .pip-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 1.25rem 0;
+    }
+
+    .pip-content table {
+      width: 100%;
+      min-width: 480px;
+      border-collapse: collapse;
+    }
+
+    .pip-content th,
+    .pip-content td {
+      padding: .8rem;
+      border: 1px solid var(--border, #e5e7eb);
+      text-align: start;
+      vertical-align: top;
+    }
+
+    .pip-content th {
+      color: var(--text, #202938);
+      background: var(--surface, #f8fafc);
+    }
+
+    .pip-content td {
+      color: var(--text-soft, #667085);
+    }
+
+    .pip-quiz {
+      margin: 1.5rem 0;
+      padding: 1rem 1.2rem;
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: 12px;
+    }
+
+    .pip-quiz summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .pip-quiz summary:focus-visible,
+    .pip-content a:focus-visible,
+    .pip-toc a:focus-visible {
+      outline: 3px solid var(--accent, #2563eb);
+      outline-offset: 3px;
+    }
+
+    .pip-related {
+      padding: 0;
+    }
+
+    .pip-related li {
+      margin: .65rem 0;
+    }
+
+    @media (max-width: 820px) {
+      .pip-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .pip-toc {
+        position: static;
+        grid-row: 1;
+      }
+
+      .pip-content {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .pip-article {
+        padding-top: 1.5rem;
+      }
+
+      .pip-toc,
+      .pip-note,
+      .pip-example,
+      .pip-formula,
+      .pip-warning {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header class="site-header">
   <div class="container nav-wrap">
-
-    <a class="logo" href="../">
-      Forex <span>Clarity</span>
-    </a>
+    <a class="logo" href="../">Forex <span>Clarity</span></a>
 
     <nav class="main-nav" aria-label="Main navigation">
       <a href="../">Home</a>
@@ -108,414 +328,502 @@
       <a href="../#risk">Risk Management</a>
     </nav>
 
-    <a class="header-button" href="../#learn">
-      Start Learning
-    </a>
-
+    <a class="header-button" href="../#learn">Start Learning</a>
   </div>
 </header>
 
-<main>
-
-  <nav class="breadcrumb container" aria-label="Breadcrumb">
+<nav class="pip-breadcrumbs" aria-label="Breadcrumb">
+  <div class="pip-container">
     <a href="../">Home</a>
-    <span aria-hidden="true">›</span>
+    <span aria-hidden="true"> / </span>
     <a href="./">Forex Basics</a>
-    <span aria-hidden="true">›</span>
+    <span aria-hidden="true"> / </span>
     <span aria-current="page">What Is a Pip?</span>
-  </nav>
+  </div>
+</nav>
 
- 
-<section class="hero">
+<section class="hero pip-hero">
   <div class="container">
     <div class="hero-content">
+      <p class="eyebrow">FOREX BASICS</p>
 
-      <p class="eyebrow">
-        FOREX BASICS
+      <h1>What Is a <span>Pip</span> in Forex?</h1>
+
+      <p class="pip-byline">
+        By Ali Moayyed and Nasrin Kheyrdost
       </p>
-
-      <h1>
-        What Is a <span>Pip</span> in Forex?
-      </h1>
-
-      <div class="article-byline">
-        <span>By Ali Moayyed and Nasrin Kheyrdost</span>
-      </div>
 
       <p class="hero-description">
-        Learn how forex pips measure price movements, how to
-        calculate pip changes in common currency pairs, and why
-        pip value and position size matter when managing trading risk.
+        Learn how pips measure forex price movements, how to calculate
+        pip changes in major currency pairs, and why pip value matters
+        when evaluating trading costs and risk.
       </p>
-
     </div>
   </div>
 </section>
 
+<main class="pip-article">
+  <div class="pip-container">
+    <div class="pip-layout">
 
-  <article class="section section-light">
-    <div class="container" style="max-width: 850px;">
+      <article class="pip-content">
 
-      <h2 style="margin-top: 0;">
-  Understanding Pips in the Forex Market
-</h2>
+        <section id="introduction">
+          <h2>Understanding Pips in Forex</h2>
 
-      <p style="margin-top: 18px; color: #667085;">
-        A pip is a standard unit used to describe changes in a
-        currency pair's exchange rate. Traders use pips to measure
-        price movements, compare market changes, and discuss spreads
-        and trade outcomes.
-      </p>
+          <p>
+            A pip is a standard unit used to describe changes in a
+            currency pair's exchange rate. Traders use pips to measure
+            price movements, compare changes, and discuss spreads and
+            trade outcomes.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        When EUR/USD moves from 1.1000 to 1.1010, the exchange rate
-        has moved by 10 pips under the standard convention. However,
-        the number of pips alone does not tell you how much money
-        you gained or lost.
-      </p>
+          <p>
+            For most non-JPY currency pairs, one pip is 0.0001.
+            For many pairs involving the Japanese yen (JPY), one pip
+            is 0.01. These conventions help traders describe price
+            movements consistently.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        The monetary result also depends on position size, the
-        currency pair, your account currency, and applicable trading
-        costs.
-      </p>
+          <div class="pip-note">
+            <strong>Remember:</strong>
+            The number of pips alone does not tell you how much money
+            you have gained or lost. The financial result also depends
+            on position size, the instrument, account currency, and
+            trading costs.
+          </div>
+        </section>
 
-      <h2 style="margin-top: 55px;">What Does Pip Mean?</h2>
+        <section id="definition">
+          <h2>What Does Pip Mean?</h2>
 
-      <p style="margin-top: 18px; color: #667085;">
-        For most commonly traded non-JPY currency pairs, one pip
-        represents a change of 0.0001 in the exchange rate. For many
-        pairs involving the Japanese yen (JPY), one pip represents
-        a change of 0.01.
-      </p>
+          <p>
+            A pip is a conventional unit for measuring the change in
+            an exchange rate. The standard pip size depends on the
+            currency pair and, for some instruments, the provider's
+            contract specifications.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        Many trading platforms display an additional decimal digit,
-        often called a fractional pip or pipette. This extra digit
-        allows prices to be quoted more precisely, but it does not
-        change the standard pip convention.
-      </p>
+          <div class="pip-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Pair type</th>
+                  <th scope="col">Example price</th>
+                  <th scope="col">Typical pip size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>EUR/USD</td>
+                  <td>1.1000</td>
+                  <td>0.0001</td>
+                </tr>
+                <tr>
+                  <td>GBP/USD</td>
+                  <td>1.2750</td>
+                  <td>0.0001</td>
+                </tr>
+                <tr>
+                  <td>USD/JPY</td>
+                  <td>150.20</td>
+                  <td>0.01</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      <h2 style="margin-top: 55px;">How to Calculate Pips</h2>
+          <p>
+            Many platforms display an additional decimal digit. This
+            is commonly called a fractional pip or pipette. It gives
+            a more precise quote without changing the standard pip size.
+          </p>
+        </section>
 
-      <p style="margin-top: 18px; color: #667085;">
-        To calculate a price movement in pips, find the difference
-        between the ending and starting prices, then divide that
-        difference by the standard pip size for the currency pair.
-        The direction of the movement tells you whether price rose
-        or fell.
-      </p>
+        <section id="calculation">
+          <h2>How to Calculate Pips</h2>
 
-      <h3 style="margin-top: 35px;">Example 1: EUR/USD</h3>
+          <p>
+            Subtract the starting price from the ending price, then
+            divide the absolute difference by the standard pip size
+            for that pair. Keep the direction separate so you can
+            identify whether price moved up or down.
+          </p>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Suppose EUR/USD rises from 1.1000 to 1.1025. The difference
-        is 0.0025, which equals 25 pips.
-      </p>
+          <div class="pip-formula">
+            <p class="formula">Pip movement = Price difference ÷ Pip size</p>
+            <p>For most non-JPY pairs, pip size = 0.0001.</p>
+            <p>For many JPY pairs, pip size = 0.01.</p>
+          </div>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Calculation: 0.0025 ÷ 0.0001 = 25 pips up.
-      </p>
+          <div class="pip-example">
+            <h3>Example 1: EUR/USD rises</h3>
+            <p>
+              The price moves from 1.1000 to 1.1025.
+            </p>
+            <p>
+              Difference: 1.1025 − 1.1000 = 0.0025.
+            </p>
+            <p>
+              Calculation: 0.0025 ÷ 0.0001 = <strong>25 pips up.</strong>
+            </p>
+          </div>
 
-      <h3 style="margin-top: 30px;">Example 2: GBP/USD</h3>
+          <div class="pip-example">
+            <h3>Example 2: GBP/USD falls</h3>
+            <p>
+              The price moves from 1.2750 to 1.2720.
+            </p>
+            <p>
+              Difference: 1.2750 − 1.2720 = 0.0030.
+            </p>
+            <p>
+              Calculation: 0.0030 ÷ 0.0001 = <strong>30 pips down.</strong>
+            </p>
+          </div>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Suppose GBP/USD falls from 1.2750 to 1.2720. The difference
-        is 0.0030, equivalent to 30 pips downward.
-      </p>
+          <div class="pip-example">
+            <h3>Example 3: USD/JPY rises</h3>
+            <p>
+              The price moves from 150.20 to 150.45.
+            </p>
+            <p>
+              Difference: 150.45 − 150.20 = 0.25.
+            </p>
+            <p>
+              Calculation: 0.25 ÷ 0.01 = <strong>25 pips up.</strong>
+            </p>
+          </div>
+        </section>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Calculation: 0.0030 ÷ 0.0001 = 30 pips down.
-      </p>
+        <section id="fractional-pips">
+          <h2>Pips and Fractional Pips</h2>
 
-      <h3 style="margin-top: 30px;">Example 3: USD/JPY</h3>
+          <p>
+            Some platforms quote EUR/USD to five decimal places,
+            such as 1.10000. In a typical five-decimal quote, the
+            fifth decimal digit represents a fractional pip, equal
+            to one-tenth of a standard pip.
+          </p>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Suppose USD/JPY rises from 150.20 to 150.45. The difference
-        is 0.25, which equals 25 pips under the standard JPY-pair
-        convention.
-      </p>
+          <div class="pip-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">EUR/USD quote change</th>
+                  <th scope="col">Movement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.10000 → 1.10010</td>
+                  <td>1 pip</td>
+                </tr>
+                <tr>
+                  <td>1.10000 → 1.10001</td>
+                  <td>0.1 pip (1 pipette)</td>
+                </tr>
+                <tr>
+                  <td>1.10000 → 1.10100</td>
+                  <td>10 pips</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Calculation: 0.25 ÷ 0.01 = 25 pips up.
-      </p>
+          <p>
+            For many JPY pairs, a three-decimal quote may show
+            fractional pips in the third decimal place. Check the
+            instrument specifications supplied by your broker,
+            especially for less common instruments.
+          </p>
+        </section>
 
-      <h2 style="margin-top: 55px;">Pips and Fractional Pips</h2>
+        <section id="pip-value">
+          <h2>How Much Is One Pip Worth?</h2>
 
-      <p style="margin-top: 18px; color: #667085;">
-        A broker may quote EUR/USD as 1.10000 rather than 1.1000.
-        In this five-decimal quote, the fifth decimal place is
-        usually a fractional pip, equal to one-tenth of a standard pip.
-      </p>
+          <p>
+            Pip size and pip value are different. Pip size describes
+            the price increment. Pip value describes the monetary
+            effect of that movement for a particular position.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        For example, a movement from 1.10000 to 1.10010 is one
-        standard pip, even though the final displayed digit changes
-        by one.
-      </p>
+          <p>
+            Pip value depends on the currency pair, trade size,
+            exchange rate, and account currency. For a standard
+            100,000-unit position in many USD-quoted major pairs,
+            one pip is approximately USD 10 when the account currency
+            is USD. This is an illustration, not a universal rule.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        For many JPY pairs, the third decimal place may represent
-        a fractional pip. Always check the instrument specifications
-        provided by your broker, particularly for less common
-        instruments.
-      </p>
+          <div class="pip-example">
+            <h3>A simple monetary example</h3>
+            <p>
+              Suppose the pip value of a position is USD 1.
+              A favorable movement of 20 pips would produce a
+              gross gain of USD 20 before costs.
+            </p>
+            <p>
+              A 20-pip move against the position would produce
+              a gross loss of USD 20 under the same assumptions.
+            </p>
+          </div>
 
-      <h2 style="margin-top: 55px;">Quick Reference: Pip Size</h2>
+          <p>
+            If your account uses a different currency, the pip value
+            may need to be converted. Verify the contract size,
+            position units, and pip value using your trading platform
+            or provider's calculator.
+          </p>
+        </section>
 
-      <div style="overflow-x: auto;">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Currency pair</th>
-              <th scope="col">Example movement</th>
-              <th scope="col">Pip movement</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>EUR/USD</td>
-              <td>1.1000 → 1.1010</td>
-              <td>10 pips up</td>
-            </tr>
-            <tr>
-              <td>GBP/USD</td>
-              <td>1.2750 → 1.2720</td>
-              <td>30 pips down</td>
-            </tr>
-            <tr>
-              <td>USD/JPY</td>
-              <td>150.20 → 150.45</td>
-              <td>25 pips up</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <section id="spreads">
+          <h2>How Pips Relate to Spreads and Trading Costs</h2>
 
-      <h2 style="margin-top: 55px;">How Much Is One Pip Worth?</h2>
+          <p>
+            The spread is the difference between the bid and ask
+            prices. It is often expressed in pips or fractional pips.
+            For example, if a pair has an ask price of 1.1002 and a
+            bid price of 1.1000, the spread is 0.0002, or 2 pips
+            under the usual EUR/USD convention.
+          </p>
 
-      <p style="margin-top: 18px; color: #667085;">
-        Pip size and pip value are different concepts. Pip size
-        describes the price increment. Pip value describes the
-        monetary effect of that movement for a particular position.
-      </p>
+          <p>
+            The spread is only one possible trading cost. Depending
+            on the account and instrument, commissions, overnight
+            financing, slippage, and other charges may also affect
+            the final result.
+          </p>
+        </section>
 
-      <p style="margin-top: 18px; color: #667085;">
-        Pip value depends on the currency pair, trade size, and
-        the currency in which your account is denominated. For pairs
-        where USD is the quote currency, a standard lot of 100,000
-        units often has a pip value of approximately $10 per pip.
-        This is a common illustration, not a universal value for
-        every pair or account.
-      </p>
+        <section id="risk">
+          <h2>Why Pips Matter for Risk Management</h2>
 
-      <p style="margin-top: 18px; color: #667085;">
-        For example, if a position has a pip value of $1 and the
-        market moves 20 pips in your favor, the gross result would
-        be $20 before spreads, commissions, swaps, and other
-        applicable costs. A 20-pip move against the position would
-        produce a $20 gross loss under the same assumptions.
-      </p>
+          <ul>
+            <li>
+              <strong>Measuring movement:</strong>
+              Pips provide a common way to describe how far price
+              has moved.
+            </li>
+            <li>
+              <strong>Planning stop-loss distances:</strong>
+              Traders may express the distance between entry and
+              stop-loss in pips.
+            </li>
+            <li>
+              <strong>Estimating financial exposure:</strong>
+              Pip distance must be considered alongside position
+              size and pip value to estimate a potential loss.
+            </li>
+            <li>
+              <strong>Comparing trades:</strong>
+              Pip results can help compare price movements, but
+              monetary outcomes also depend on trade size and costs.
+            </li>
+          </ul>
 
-      <p style="margin-top: 18px; color: #667085;">
-        Do not estimate financial risk from pips alone. Verify the
-        instrument's contract specifications and pip value using
-        your provider's calculator or trading platform.
-      </p>
+          <div class="pip-warning">
+            <strong>Risk warning</strong>
+            <p>
+              A stop-loss order does not guarantee execution at
+              the exact requested price. Gaps, fast markets, and
+              slippage can cause a different fill price. Leveraged
+              forex trading can result in substantial losses.
+            </p>
+          </div>
+        </section>
 
-      <h2 style="margin-top: 55px;">Why Pips Matter in Forex Trading</h2>
+        <section id="mistakes">
+          <h2>Common Beginner Mistakes</h2>
 
-      <ul style="margin-top: 15px; color: #667085; line-height: 1.9;">
-        <li>
-          <strong>Measuring price movement:</strong>
-          Pips help describe how far a currency pair has moved.
-        </li>
-        <li>
-          <strong>Understanding spreads:</strong>
-          The difference between bid and ask prices is often
-          expressed in pips or fractional pips.
-        </li>
-        <li>
-          <strong>Planning stop-loss distances:</strong>
-          Traders may describe a stop-loss as a certain number of
-          pips from an entry price, although gaps and slippage can
-          affect the actual execution price.
-        </li>
-        <li>
-          <strong>Comparing trade outcomes:</strong>
-          Pip results help compare price movements, but they do
-          not replace monetary profit-and-loss calculations.
-        </li>
-      </ul>
+          <ul>
+            <li>
+              <strong>Confusing pips with money:</strong>
+              A 20-pip move does not have the same monetary value
+              for every position.
+            </li>
+            <li>
+              <strong>Counting the wrong decimal places:</strong>
+              Most non-JPY pairs use 0.0001 as a standard pip,
+              while many JPY pairs use 0.01.
+            </li>
+            <li>
+              <strong>Confusing pips with pipettes:</strong>
+              An additional displayed digit is often one-tenth
+              of a standard pip.
+            </li>
+            <li>
+              <strong>Ignoring costs:</strong>
+              Gross price movement does not account for all
+              spreads, commissions, or financing charges.
+            </li>
+            <li>
+              <strong>Assuming a stop price is guaranteed:</strong>
+              Execution can differ from the requested price
+              during gaps or volatile conditions.
+            </li>
+          </ul>
+        </section>
 
-      <h2 style="margin-top: 55px;">Common Beginner Mistakes</h2>
+        <section id="practice">
+          <h2>Practice: Count the Pips</h2>
 
-      <ul style="margin-top: 15px; color: #667085; line-height: 1.9;">
-        <li>
-          <strong>Confusing pips with money:</strong>
-          A 20-pip move does not have the same monetary value for
-          every position size or currency pair.
-        </li>
-        <li>
-          <strong>Counting the wrong decimal places:</strong>
-          Most non-JPY pairs use the fourth decimal place for a
-          standard pip, while JPY pairs commonly use the second.
-        </li>
-        <li>
-          <strong>Confusing pips with fractional pips:</strong>
-          An extra displayed digit often represents one-tenth
-          of a pip.
-        </li>
-        <li>
-          <strong>Ignoring trading costs:</strong>
-          Gross pip movement does not include every spread,
-          commission, financing charge, or execution effect.
-        </li>
-        <li>
-          <strong>Assuming a stop-loss guarantees the exact exit:</strong>
-          In fast markets or price gaps, execution may differ
-          from the requested stop price.
-        </li>
-      </ul>
+          <p>
+            Try each example before opening the answer section.
+            Use the standard pip conventions explained above.
+          </p>
 
-      <h2 style="margin-top: 55px;">Practice: Count the Pips</h2>
+          <ol>
+            <li>
+              EUR/USD moves from 1.0850 to 1.0870.
+              How many pips has it risen?
+            </li>
+            <li>
+              GBP/USD moves from 1.2600 to 1.2575.
+              How many pips has it fallen?
+            </li>
+            <li>
+              USD/JPY moves from 149.80 to 150.10.
+              How many pips has it risen?
+            </li>
+          </ol>
 
-      <p style="margin-top: 18px; color: #667085;">
-        Try calculating these examples before checking the answers.
-        Use the standard pip conventions described above.
-      </p>
+          <details class="pip-quiz">
+            <summary>Show the answers and calculations</summary>
 
-      <ol style="margin-top: 15px; color: #667085; line-height: 1.9;">
-        <li>
-          EUR/USD moves from 1.0850 to 1.0870. How many pips
-          has it risen?
-        </li>
-        <li>
-          GBP/USD moves from 1.2600 to 1.2575. How many pips
-          has it fallen?
-        </li>
-        <li>
-          USD/JPY moves from 149.80 to 150.10. How many pips
-          has it risen?
-        </li>
-      </ol>
+            <p>
+              <strong>1. 20 pips up.</strong>
+              (1.0870 − 1.0850) ÷ 0.0001 = 20.
+            </p>
 
-      <details style="margin-top: 20px;">
-        <summary>Show the answers</summary>
+            <p>
+              <strong>2. 25 pips down.</strong>
+              (1.2600 − 1.2575) ÷ 0.0001 = 25.
+            </p>
 
-        <p style="margin-top: 15px; color: #667085;">
-          <strong>1.</strong> 20 pips up:
-          (1.0870 − 1.0850) ÷ 0.0001 = 20.
-        </p>
+            <p>
+              <strong>3. 30 pips up.</strong>
+              (150.10 − 149.80) ÷ 0.01 = 30.
+            </p>
+          </details>
+        </section>
 
-        <p style="margin-top: 15px; color: #667085;">
-          <strong>2.</strong> 25 pips down:
-          (1.2600 − 1.2575) ÷ 0.0001 = 25.
-        </p>
+        <section id="faq">
+          <h2>Frequently Asked Questions</h2>
 
-        <p style="margin-top: 15px; color: #667085;">
-          <strong>3.</strong> 30 pips up:
-          (150.10 − 149.80) ÷ 0.01 = 30.
-        </p>
-      </details>
+          <h3>Is a pip always the fourth decimal place?</h3>
+          <p>
+            No. Most non-JPY currency pairs use 0.0001 as the
+            standard pip size, while many JPY pairs use 0.01.
+            Check the specifications for the instrument you trade.
+          </p>
 
-      <h2 id="faq" style="margin-top: 55px;">Frequently Asked Questions</h2>
+          <h3>What is the difference between a pip and a pipette?</h3>
+          <p>
+            A pipette is commonly one-tenth of a standard pip.
+            It often appears as the fifth decimal place for
+            non-JPY pairs or the third for JPY pairs.
+          </p>
 
-      <h3 style="margin-top: 35px;">Is a pip always the fourth decimal place?</h3>
+          <h3>Does a higher pip count mean a larger profit?</h3>
+          <p>
+            Not necessarily. Profit or loss also depends on
+            position size, pip value, account currency, direction
+            of the trade, and trading costs.
+          </p>
 
-      <p style="margin-top: 10px; color: #667085;">
-        No. Most non-JPY currency pairs use the fourth decimal
-        place, while JPY pairs commonly use the second decimal
-        place for a standard pip. Check the provider's specifications
-        for other instruments.
-      </p>
+          <h3>Can I use pips to measure risk?</h3>
+          <p>
+            Pips can describe the distance between an entry and
+            a stop-loss. Estimating monetary risk also requires
+            position size, pip value, and consideration of
+            execution conditions and costs.
+          </p>
+        </section>
 
-      <h3 style="margin-top: 30px;">What is the difference between a pip and a pipette?</h3>
+        <section id="next-steps">
+          <h2>What Should You Learn Next?</h2>
 
-      <p style="margin-top: 10px; color: #667085;">
-        A pipette is commonly one-tenth of a standard pip. It is
-        often shown as the fifth decimal place for non-JPY pairs
-        or the third decimal place for JPY pairs.
-      </p>
+          <p>
+            Now that you understand pips, explore how currency
+            pairs are quoted and how forex trades work. These
+            concepts build a foundation for understanding spreads,
+            price movements, and trading risk.
+          </p>
 
-      <h3 style="margin-top: 30px;">Does a higher pip count mean a larger profit?</h3>
+          <ul class="pip-related">
+            <li>
+              <a href="./currency-pairs.html">
+                What Is a Currency Pair? →
+              </a>
+            </li>
+            <li>
+              <a href="./how-forex-trading-works.html">
+                How Does Forex Trading Work? →
+              </a>
+            </li>
+            <li>
+              <a href="./what-is-forex.html">
+                What Is Forex? →
+              </a>
+            </li>
+            <li>
+              <a href="./">
+                Explore the Forex Basics learning path →
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Not necessarily. Monetary results also depend on position
-        size, pip value, account currency, and trading costs.
-        A larger pip movement can also mean a larger loss.
-      </p>
+      </article>
 
-      <h3 style="margin-top: 30px;">Can I use pips to measure risk?</h3>
+      <aside class="pip-toc" aria-label="Article contents">
+        <h2>On This Page</h2>
+        <ol>
+          <li><a href="#introduction">Understanding Pips</a></li>
+          <li><a href="#definition">Pip Definition</a></li>
+          <li><a href="#calculation">Calculate Pips</a></li>
+          <li><a href="#fractional-pips">Fractional Pips</a></li>
+          <li><a href="#pip-value">Pip Value</a></li>
+          <li><a href="#spreads">Spreads and Costs</a></li>
+          <li><a href="#risk">Risk Management</a></li>
+          <li><a href="#mistakes">Common Mistakes</a></li>
+          <li><a href="#practice">Practice</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ol>
 
-      <p style="margin-top: 10px; color: #667085;">
-        Pips can describe the distance between an entry and a
-        stop-loss, but estimating financial risk also requires
-        position size, pip value, execution conditions, and
-        applicable costs.
-      </p>
-
-      <h2 style="margin-top: 55px;">What Should You Learn Next?</h2>
-
-      <p style="margin-top: 18px; color: #667085;">
-        Now that you understand pips, review currency pairs and
-        how forex trades work. These concepts will help you
-        understand price quotes, trading costs, and risk.
-      </p>
-
-      <ul style="margin-top: 15px; line-height: 1.9;">
-        <li>
-          <a href="./currency-pairs.html">
-            Review: What Is a Currency Pair? →
-          </a>
-        </li>
-        <li>
-          <a href="./how-forex-trading-works.html">
-            Review: How Does Forex Trading Work? →
-          </a>
-        </li>
-        <li>
-          <a href="./what-is-forex.html">
-            Review: What Is Forex? →
-          </a>
-        </li>
-        <li>
-          <a href="./">
-            Explore the Forex Basics learning path →
-          </a>
-        </li>
-      </ul>
+        <div class="pip-note">
+          <strong>Learning tip</strong>
+          <p>
+            Practise the calculations with sample prices before
+            using them to estimate real trading exposure.
+          </p>
+        </div>
+      </aside>
 
     </div>
-  </article>
-
-  <section class="cta-section">
-    <div class="container cta-content">
-
-      <p class="eyebrow">CONTINUE LEARNING</p>
-
-      <h2>
-        Build your forex knowledge one concept at a time.
-      </h2>
-
-      <a class="button button-primary" href="./">
-        Explore Forex Basics
-      </a>
-
-    </div>
-  </section>
-
+  </div>
 </main>
 
-<footer class="site-footer">
+<section class="cta-section">
+  <div class="container cta-content">
+    <p class="eyebrow">CONTINUE LEARNING</p>
 
+    <h2>Build your forex knowledge one concept at a time.</h2>
+
+    <a class="button button-primary" href="./">
+      Explore Forex Basics
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
   <div class="container footer-grid">
 
     <div>
       <a class="logo footer-logo" href="../">
         Forex <span>Clarity</span>
       </a>
-
       <p>Clear and practical forex education.</p>
     </div>
 
@@ -546,7 +854,6 @@
   <div class="container footer-bottom">
     <p>© 2026 Forex Clarity. All rights reserved.</p>
   </div>
-
 </footer>
 
 </body>
