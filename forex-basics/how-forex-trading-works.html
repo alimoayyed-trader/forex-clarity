@@ -1,122 +1,817 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How Does Forex Trading Work? A Beginner’s Guide | Forex Clarity</title>
-<meta name="description" content="Learn how forex trading works, how currency pairs move, what buy and sell mean, and how spreads, leverage, margin and risk affect a trade.">
-<link rel="canonical" href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="How Does Forex Trading Work? A Beginner’s Guide">
-<meta property="og:description" content="A practical introduction to forex trades, currency pairs, spreads, leverage and risk management.">
-<meta property="og:url" content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html">
-<link rel="stylesheet" href="../assets/css/style.css">
-<style>
-.article-page{padding:3rem 0 4rem}.article-wrap{width:min(860px,calc(100% - 2rem));margin:auto}
-.article-breadcrumbs,.article-meta{font-size:.92rem;color:var(--text-soft,#667085)}
-.article-breadcrumbs{margin-bottom:1.5rem}.article-breadcrumbs a,.article-body a{color:var(--accent-dark,#2563eb)}
-.article-kicker{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;color:var(--accent-dark,#2563eb)}
-.article-header{margin-bottom:2rem}.article-header h1{line-height:1.15;margin:.6rem 0 1rem}
-.article-deck{font-size:1.15rem;line-height:1.75;color:var(--text-soft,#667085)}
-.article-body{font-size:1.03rem;line-height:1.85}.article-body h2{margin-top:2.4rem;line-height:1.25}.article-body h3{margin-top:1.6rem}
-.article-body li{margin:.45rem 0}.article-callout{padding:1rem 1.2rem;border-left:4px solid var(--accent,#3b82f6);background:var(--surface-soft,#f1f5fa);border-radius:.5rem;margin:1.5rem 0}
-.article-table-wrap{overflow-x:auto;margin:1.25rem 0}.article-body table{width:100%;border-collapse:collapse}
-.article-body th,.article-body td{padding:.75rem;border:1px solid var(--line,#e4e9f0);text-align:left;vertical-align:top}
-.article-body th{background:var(--surface-soft,#f1f5fa)}.article-toc,.article-next{border:1px solid var(--line,#e4e9f0);padding:1rem 1.25rem;border-radius:.75rem;margin:1.5rem 0}
-.article-toc h2{margin-top:0;font-size:1.1rem}.article-next{margin-top:3rem}
-@media(max-width:640px){.article-page{padding-top:2rem}.article-header h1{font-size:2rem}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How Does Forex Trading Work? A Beginner’s Guide | Forex Clarity</title>
+  <meta name="description" content="Learn how forex trading works, including currency pairs, buy and sell orders, pips, spreads, leverage, margin, trading costs and risk management.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Forex Clarity">
+  <meta property="og:title" content="How Does Forex Trading Work? A Beginner’s Guide">
+  <meta property="og:description" content="Understand how forex trades work, how currency prices move, and how trading costs, leverage and risk affect a position.">
+  <meta property="og:url" content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How Does Forex Trading Work?">
+  <meta name="twitter:description" content="A beginner-friendly guide to forex trading, currency pairs, trading costs and risk management.">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .ftw-page {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .ftw-container {
+      width: min(1120px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .ftw-breadcrumbs {
+      margin-bottom: 1.5rem;
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .ftw-breadcrumbs a {
+      color: var(--accent-dark, #2563eb);
+      text-underline-offset: .2em;
+    }
+
+    .ftw-hero {
+      max-width: 850px;
+      margin-bottom: 2rem;
+    }
+
+    .ftw-kicker {
+      margin: 0 0 .6rem;
+      color: var(--accent-dark, #2563eb);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .ftw-hero h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 1.14;
+      letter-spacing: -.025em;
+    }
+
+    .ftw-deck {
+      max-width: 760px;
+      margin: 0 0 1rem;
+      color: var(--text-soft, #667085);
+      font-size: 1.12rem;
+      line-height: 1.8;
+    }
+
+    .ftw-meta {
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+    }
+
+    .ftw-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 250px;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .ftw-body {
+      min-width: 0;
+      font-size: 1.02rem;
+      line-height: 1.85;
+      overflow-wrap: anywhere;
+    }
+
+    .ftw-body h2 {
+      margin: 2.6rem 0 .9rem;
+      line-height: 1.3;
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      scroll-margin-top: 2rem;
+    }
+
+    .ftw-body h3 {
+      margin: 1.7rem 0 .6rem;
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
+    .ftw-body p {
+      margin: .8rem 0 1rem;
+    }
+
+    .ftw-body li {
+      margin: .45rem 0;
+    }
+
+    .ftw-body a,
+    .ftw-toc a,
+    .ftw-next a {
+      color: var(--accent-dark, #2563eb);
+      text-decoration: underline;
+      text-underline-offset: .2em;
+    }
+
+    .ftw-body a:hover,
+    .ftw-toc a:hover,
+    .ftw-next a:hover {
+      color: var(--accent, #1d4ed8);
+    }
+
+    .ftw-body a:focus-visible,
+    .ftw-toc a:focus-visible,
+    .ftw-next a:focus-visible,
+    .ftw-breadcrumbs a:focus-visible {
+      outline: 2px solid var(--accent, #2563eb);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .ftw-callout {
+      margin: 1.5rem 0;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid var(--accent, #3b82f6);
+      border-radius: .5rem;
+      background: var(--surface-soft, #f1f5fa);
+    }
+
+    .ftw-warning {
+      border-left-color: #d97706;
+    }
+
+    .ftw-toc {
+      position: sticky;
+      top: 1.5rem;
+      padding: 1.2rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .8rem;
+      background: var(--surface, #fff);
+    }
+
+    .ftw-toc h2 {
+      margin: 0 0 .8rem;
+      font-size: 1.08rem;
+      line-height: 1.4;
+    }
+
+    .ftw-toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .ftw-toc li {
+      margin: .55rem 0;
+      font-size: .91rem;
+      line-height: 1.6;
+    }
+
+    .ftw-table-wrap {
+      margin: 1.3rem 0;
+      overflow-x: auto;
+      border-radius: .5rem;
+    }
+
+    .ftw-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .95rem;
+    }
+
+    .ftw-body th,
+    .ftw-body td {
+      padding: .75rem;
+      border: 1px solid var(--line, #e4e9f0);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .ftw-body th {
+      background: var(--surface-soft, #f1f5fa);
+      font-weight: 700;
+    }
+
+    .ftw-formula {
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .6rem;
+      text-align: center;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .ftw-next {
+      margin-top: 3rem;
+      padding: 1.3rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .8rem;
+    }
+
+    .ftw-next h2 {
+      margin-top: 0;
+    }
+
+    .ftw-next ul {
+      padding-left: 1.25rem;
+    }
+
+    .ftw-disclaimer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line, #e4e9f0);
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 800px) {
+      .ftw-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+      }
+
+      .ftw-toc {
+        position: static;
+      }
+
+      .ftw-body h2 {
+        margin-top: 2.2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ftw-page {
+        padding-top: 1.7rem;
+      }
+
+      .ftw-container {
+        width: min(100% - 1.25rem, 1120px);
+      }
+
+      .ftw-deck {
+        font-size: 1.02rem;
+      }
+
+      .ftw-body {
+        font-size: 1rem;
+      }
+
+      .ftw-body th,
+      .ftw-body td {
+        padding: .6rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://alimoayyed-trader.github.io/forex-clarity/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Forex Basics",
+        "item": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How Does Forex Trading Work?",
+        "item": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Does Forex Trading Work? A Beginner’s Guide",
+    "description": "Learn how forex trading works, including currency pairs, buy and sell orders, pips, spreads, leverage, margin, trading costs and risk management.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/how-forex-trading-works.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Forex Clarity",
+      "url": "https://alimoayyed-trader.github.io/forex-clarity/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="../">Forex <span>Clarity</span></a>
 
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="logo" href="../">Forex <span>Clarity</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="../">Home</a>
-      <a href="./">Forex Basics</a>
-      <a href="../about/">About</a>
-    </nav>
-  </div>
-</header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="./">Forex Basics</a>
+        <a href="../about/">About</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="article-page"><article class="article-wrap">
-<nav class="article-breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a> / <a href="./">Forex Basics</a> / <span aria-current="page">How Forex Trading Works</span></nav>
-<header class="article-header"><p class="article-kicker">Forex Basics · Beginner Guide</p>
-<h1>How Does Forex Trading Work?</h1>
-<p class="article-deck">Forex trading is the process of exchanging one currency for another. Learn how currency pairs, buy and sell orders, price changes, trading costs and risk fit together in a typical forex trade.</p>
-<p class="article-meta">Educational guide · Beginner level</p></header>
-<div class="article-body">
-<p>Forex is short for <strong>foreign exchange</strong>. Currencies are quoted in pairs such as EUR/USD or GBP/JPY. A trader takes a position based on the possibility that one currency will strengthen or weaken relative to the other. Prices can move either way, so a trade can result in a loss as well as a profit.</p>
-<div class="article-callout"><strong>Important:</strong> Forex trading involves substantial risk. Leverage can magnify gains and losses, and you may lose some or all of the money deposited with a provider. This article is educational, not a recommendation to trade.</div>
-<nav class="article-toc" aria-label="On this page"><h2>On this page</h2><ul>
-<li><a href="#pairs">Understand currency pairs</a></li><li><a href="#direction">Choose buy or sell</a></li><li><a href="#example">A simple trade example</a></li><li><a href="#costs">Trading costs</a></li><li><a href="#leverage">Leverage and margin</a></li><li><a href="#orders">Orders and trade management</a></li><li><a href="#risk">Risk management</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></nav>
-<h2 id="pairs">1. Understand currency pairs</h2>
-<p>Every forex quote contains two currencies. In <strong>EUR/USD</strong>, EUR is the base currency and USD is the quote currency. The price tells you how many US dollars are needed to buy one euro.</p>
-<p>If EUR/USD is 1.0800, one euro is worth 1.08 US dollars at that quoted price. If the quote rises to 1.0850, the euro has strengthened against the dollar over that interval. If it falls to 1.0750, the euro has weakened against the dollar.</p>
-<h2 id="direction">2. Choose whether to buy or sell</h2>
-<ul><li><strong>Buy (go long):</strong> you expect the pair’s price to rise. In EUR/USD, that means expecting the euro to strengthen relative to the dollar.</li><li><strong>Sell (go short):</strong> you expect the pair’s price to fall. That means expecting the euro to weaken relative to the dollar.</li></ul>
-<p>Being correct about direction is not the only factor. Position size, entry and exit prices, spreads and other fees all affect the final result.</p>
-<h2 id="example">3. A simple trade example</h2>
-<p>Imagine EUR/USD is quoted at 1.0800 and a trader buys. Later, the quote reaches 1.0850. The market moved 0.0050, or 50 pips for a pair where one pip is typically 0.0001.</p>
-<div class="article-table-wrap"><table><thead><tr><th>Item</th><th>Illustrative value</th></tr></thead><tbody>
-<tr><td>Entry quote</td><td>1.0800</td></tr><tr><td>Exit quote</td><td>1.0850</td></tr><tr><td>Price movement</td><td>+50 pips</td></tr><tr><td>Position size</td><td>Not specified</td></tr><tr><td>Net profit</td><td>Cannot be calculated without position size and trading costs</td></tr>
-</tbody></table></div>
-<p>This example illustrates price movement, not a guaranteed or typical outcome. If the price moved down instead, the buy position would lose value. A sell position has the opposite directional exposure, while still being affected by costs and risk.</p>
-<h2 id="costs">4. Understand trading costs</h2>
-<h3>Spread</h3><p>The spread is the difference between the bid price (the price at which you can sell) and ask price (the price at which you can buy). A wider spread generally means a higher immediate cost of entering and exiting.</p>
-<h3>Commission and overnight fees</h3><p>Some account types charge a separate commission. Depending on the product and provider, overnight financing or swap charges may also apply. Check the provider’s fee schedule and the instrument’s contract specifications.</p>
-<h3>Slippage</h3><p>Slippage occurs when an order is filled at a different price from the one expected. It can happen during fast markets, low liquidity or important news. A stop order does not always guarantee execution at the exact stop price.</p>
-<h2 id="leverage">5. Leverage and margin</h2>
-<p><strong>Leverage</strong> allows a trader to control a position larger than the funds committed as margin. <strong>Margin</strong> is the collateral required to open and maintain a leveraged position. Requirements vary by instrument, provider and applicable rules.</p>
-<p>Leverage magnifies exposure: a small market move can have a large effect relative to the margin used. If the market moves against a leveraged position, losses can accumulate quickly and the provider may close positions when margin requirements are not met.</p>
-<div class="article-callout">Do not choose leverage based only on the maximum available. First determine how much you can afford to risk, the distance to your planned invalidation or stop level, and the position size that fits that risk.</div>
-<h2 id="orders">6. Orders and trade management</h2>
-<ul><li><strong>Market order:</strong> requests execution at the best available price; the final fill may differ from the displayed quote.</li><li><strong>Limit order:</strong> seeks execution at a specified price or better, subject to the provider’s rules and available liquidity.</li><li><strong>Stop order:</strong> activates when its trigger condition is reached; execution may occur at a different price in fast markets.</li><li><strong>Stop-loss:</strong> an instruction intended to exit a position at a defined level. It helps plan risk but does not eliminate slippage or all risk.</li><li><strong>Take-profit:</strong> an instruction intended to close a position at a chosen target, subject to execution conditions.</li></ul>
-<p>Before entering a trade, know the reason for entry, what would invalidate the idea, where you plan to exit, and how much you could lose if the trade fails.</p>
-<h2 id="risk">7. Manage risk before trading</h2>
-<ul><li>Risk only money you can afford to lose; do not use essential living expenses or borrowed money.</li><li>Calculate position size from the planned stop distance and the amount you are willing to risk.</li><li>Remember that gaps, slippage, spreads and fast markets can make actual losses differ from planned losses.</li><li>Avoid increasing position size just to recover a previous loss.</li><li>Practise in a demo environment and keep a journal before considering real-money trading.</li></ul>
-<p>Risk management cannot guarantee a positive result. It is a way to make risk explicit and avoid taking positions whose potential losses are unacceptable to you.</p>
-<h2>8. A beginner’s learning checklist</h2>
-<ol><li>Learn how currency pairs are quoted and what a pip means.</li><li>Understand bid, ask, spread and the provider’s fees.</li><li>Learn how order types behave, including their limitations.</li><li>Understand leverage, margin and the possibility of rapid losses.</li><li>Write down an entry idea, invalidation point and exit plan before practising.</li><li>Track many practice trades instead of judging a method from one outcome.</li></ol>
-<h2 id="faq">Frequently asked questions</h2>
-<h3>Can beginners make money trading forex?</h3><p>Some traders may make profits, but many retail traders lose money. Outcomes are uncertain and depend on costs, risk control, experience and market conditions. No strategy can guarantee profit.</p>
-<h3>How much money do I need to start?</h3><p>Minimum deposits vary by provider and jurisdiction. A low minimum does not make trading low-risk. Understand contract specifications, costs and loss scenarios before depositing money.</p>
-<h3>Is forex trading open 24 hours a day?</h3><p>The global forex market operates across major financial centres during the business week, but exact hours, breaks and holiday schedules depend on the instrument and provider. Check the schedule shown by your platform.</p>
-<h3>Is leverage necessary?</h3><p>Many retail providers offer leverage, but it is not a shortcut to profit. It increases exposure and can magnify losses. Available leverage and protections vary by jurisdiction and provider.</p>
+  <main class="ftw-page">
+    <div class="ftw-container">
 
-<div class="article-next">
-  <h2>Continue Learning</h2>
+      <nav class="ftw-breadcrumbs" aria-label="Breadcrumb">
+        <a href="../">Home</a>
+        <span aria-hidden="true"> / </span>
+        <a href="./">Forex Basics</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">How Forex Trading Works</span>
+      </nav>
 
-  <p>
-    You now understand how forex trades work. Continue learning
-    by reviewing how currency pairs are quoted, then explore
-    the key costs and risks involved in trading.
-  </p>
+      <header class="ftw-hero">
+        <p class="ftw-kicker">Forex Basics · Beginner Guide</p>
 
-  <p>
-    <a href="./currency-pairs.html">
-      Review: What Is a Currency Pair? →
-    </a>
-  </p>
+        <h1>How Does Forex Trading Work?</h1>
 
-  <p>
-    <a href="./what-is-forex.html">
-      Review: What Is Forex? →
-    </a>
-  </p>
+        <p class="ftw-deck">
+          Forex trading involves exchanging one currency for another.
+          Learn how currency pairs, buy and sell orders, price movements,
+          trading costs, leverage and risk fit together in a typical trade.
+        </p>
 
-  <p>
-    <a href="./">
-      Explore the Forex Basics learning path →
-    </a>
-  </p>
-</div>
-</article></main>
-<footer class="site-footer"><div class="container footer-grid">
-<div><a class="logo footer-logo" href="../">Forex <span>Clarity</span></a><p>Clear and practical forex education.</p></div>
-<div><h3>Learn</h3><a href="./">Forex Basics</a><a href="./what-is-forex.html">What Is Forex?</a></div>
-<div><h3>Explore</h3><a href="../#analysis">Technical Analysis</a><a href="../#risk">Risk Management</a><a href="../about/">About</a></div>
-<div><h3>Information</h3><p>Educational content only.</p><p>Not financial advice.</p></div>
-</div><div class="container footer-bottom"><p>© 2026 Forex Clarity. All rights reserved.</p></div></footer>
-</body></html>
+        <p class="ftw-meta">Educational guide · Beginner level</p>
+      </header>
+
+      <div class="ftw-layout">
+
+        <article class="ftw-body">
+          <p>
+            Forex is short for <strong>foreign exchange</strong>. In the
+            foreign exchange market, currencies are quoted in pairs such
+            as EUR/USD or GBP/JPY. A trader may open a position based on
+            the expectation that one currency will strengthen or weaken
+            relative to the other.
+          </p>
+
+          <p>
+            A trade's result depends on the direction and size of the
+            price movement, the position size, the entry and exit prices,
+            and the costs involved. A trade can lose money even when a
+            trader understands how the market works.
+          </p>
+
+          <div class="ftw-callout ftw-warning">
+            <strong>Risk warning:</strong> Forex trading can lead to
+            substantial losses. Leverage magnifies exposure, and losses
+            can occur quickly. This article is for educational purposes
+            only and is not financial advice or a recommendation to trade.
+          </div>
+
+          <h2 id="pairs">1. Understand currency pairs</h2>
+
+          <p>
+            A forex quote contains two currencies. In
+            <strong>EUR/USD</strong>, EUR is the <strong>base currency</strong>
+            and USD is the <strong>quote currency</strong>. The quoted
+            price tells you how many US dollars correspond to one euro.
+          </p>
+
+          <p>
+            If EUR/USD is 1.0800, one euro corresponds to 1.08 US dollars
+            at that quoted rate. If the price rises to 1.0850, the euro
+            has strengthened against the dollar over that interval.
+            If the price falls to 1.0750, the euro has weakened against
+            the dollar.
+          </p>
+
+          <p>
+            Currency prices are affected by many factors, including
+            interest-rate expectations, economic data, central-bank
+            decisions, political developments and market sentiment.
+            Price movements are uncertain.
+          </p>
+
+          <p>
+            Learn more in our guide:
+            <a href="./currency-pairs.html">What Is a Currency Pair?</a>
+          </p>
+
+          <h2 id="direction">2. Choose whether to buy or sell</h2>
+
+          <p>
+            A trader generally chooses a direction based on how they
+            expect the quoted pair to move.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Buy (go long):</strong> you expect the pair's price
+              to rise. Buying EUR/USD means taking a position that benefits
+              from the euro strengthening relative to the dollar, before
+              costs.
+            </li>
+            <li>
+              <strong>Sell (go short):</strong> you expect the pair's price
+              to fall. Selling EUR/USD means taking a position that benefits
+              from the euro weakening relative to the dollar, before costs.
+            </li>
+          </ul>
+
+          <p>
+            Being correct about direction is not enough by itself.
+            Position size, execution price, spreads, commissions and
+            other charges can all affect the result.
+          </p>
+
+          <h2 id="example">3. A simple forex trade example</h2>
+
+          <p>
+            Imagine a trader buys EUR/USD at an illustrative entry price
+            of 1.0800 and later closes the position at 1.0850. The quoted
+            price has moved upward by 0.0050.
+          </p>
+
+          <div class="ftw-formula">
+            Price movement = 1.0850 − 1.0800 = 0.0050
+          </div>
+
+          <p>
+            For most major currency pairs quoted to four decimal places,
+            one pip is typically 0.0001. This price movement is therefore
+            50 pips, before accounting for the spread and other costs.
+          </p>
+
+          <div class="ftw-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Illustrative value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Entry price</td>
+                  <td>1.0800</td>
+                </tr>
+                <tr>
+                  <td>Exit price</td>
+                  <td>1.0850</td>
+                </tr>
+                <tr>
+                  <td>Price movement</td>
+                  <td>+0.0050, or 50 pips</td>
+                </tr>
+                <tr>
+                  <td>Position size</td>
+                  <td>Not specified</td>
+                </tr>
+                <tr>
+                  <td>Net profit or loss</td>
+                  <td>Cannot be calculated from price movement alone</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            The actual financial result depends on the position size,
+            execution prices, spread, commission and any applicable
+            financing charges. A similar move in the opposite direction
+            would have the opposite effect on a buy position.
+          </p>
+
+          <p>
+            For more detail, read
+            <a href="./what-is-a-pip.html">What Is a Pip in Forex?</a>
+          </p>
+
+          <div class="ftw-callout">
+            <strong>Remember:</strong> A pip describes a price movement.
+            It does not represent the same monetary amount for every
+            position. Position size and the currency pair affect pip value.
+          </div>
+
+          <h2 id="costs">4. Understand trading costs</h2>
+
+          <p>
+            Trading costs reduce the result of a trade. The exact charges
+            depend on the instrument, account type and provider.
+          </p>
+
+          <h3>Spread</h3>
+
+          <p>
+            The spread is the difference between the bid and ask prices.
+            The bid is the price at which you can sell, while the ask is
+            the price at which you can buy. A wider spread generally means
+            a higher immediate trading cost, all else being equal.
+          </p>
+
+          <h3>Commission</h3>
+
+          <p>
+            Some account types charge a separate commission when a
+            position is opened, closed or both. Compare the total costs
+            rather than assuming an account with no separate commission
+            is always cheaper.
+          </p>
+
+          <h3>Overnight financing</h3>
+
+          <p>
+            Positions held overnight may incur financing charges or
+            credits, sometimes called swaps. The amount and conditions
+            depend on the instrument, the provider and the direction
+            of the position.
+          </p>
+
+          <h3>Slippage</h3>
+
+          <p>
+            Slippage occurs when an order is executed at a different price
+            from the one expected. It can happen during volatile markets,
+            around important news or when available liquidity changes.
+            A stop-loss order does not always guarantee execution at the
+            exact stop price.
+          </p>
+
+          <h2 id="leverage">5. Understand leverage and margin</h2>
+
+          <p>
+            <strong>Leverage</strong> allows a trader to control a position
+            whose market exposure is larger than the funds required as
+            margin. <strong>Margin</strong> is the collateral required
+            to open and maintain a leveraged position.
+          </p>
+
+          <p>
+            For example, if a hypothetical position has a market exposure
+            of $10,000 and the applicable margin requirement is 5%, the
+            required initial margin would be $500. This is an illustration
+            only; actual requirements depend on the product, provider and
+            applicable regulations.
+          </p>
+
+          <p>
+            The margin is not the maximum possible loss. If the market
+            moves against the position, losses can accumulate quickly.
+            Depending on the provider's rules, positions may be closed
+            if the account no longer meets margin requirements.
+          </p>
+
+          <div class="ftw-callout ftw-warning">
+            <strong>Important:</strong> Higher leverage increases market
+            exposure relative to the funds committed. It does not improve
+            the probability of a trade being correct and can magnify losses.
+          </div>
+
+          <h2 id="orders">6. Learn how orders work</h2>
+
+          <p>
+            Trading platforms offer different order types. Their names
+            are similar across many providers, but the exact execution
+            rules can vary.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Market order:</strong> requests execution at the
+              best available price. The final execution price may differ
+              from the displayed quote.
+            </li>
+            <li>
+              <strong>Limit order:</strong> seeks execution at a specified
+              price or better. Execution is not guaranteed if the market
+              does not meet the order conditions.
+            </li>
+            <li>
+              <strong>Stop order:</strong> becomes active when its trigger
+              condition is reached. In fast markets, execution may occur
+              at a different price.
+            </li>
+            <li>
+              <strong>Stop-loss:</strong> is intended to close a position
+              at a defined risk level. It helps structure a trade but
+              cannot eliminate every risk.
+            </li>
+            <li>
+              <strong>Take-profit:</strong> is intended to close a position
+              at a chosen target, subject to execution conditions.
+            </li>
+          </ul>
+
+          <p>
+            Before opening a position, define the reason for entry,
+            the condition that would invalidate the idea, the planned
+            exit and the amount you could lose if the trade fails.
+          </p>
+
+          <h2 id="risk">7. Manage risk before trading</h2>
+
+          <p>
+            Risk management does not guarantee a profit. Its purpose is
+            to make potential losses explicit and help avoid positions
+            whose risks are unacceptable.
+          </p>
+
+          <ul>
+            <li>
+              Never risk money needed for essential expenses or use
+              borrowed money simply to fund a trade.
+            </li>
+            <li>
+              Determine position size from your planned stop distance
+              and the amount you are willing to risk.
+            </li>
+            <li>
+              Account for spreads, commissions, slippage and financing
+              charges when evaluating a trade.
+            </li>
+            <li>
+              Understand that actual losses can exceed the amount planned
+              for some orders or market conditions.
+            </li>
+            <li>
+              Avoid increasing position size simply to recover a previous
+              loss.
+            </li>
+            <li>
+              Practise in a demo environment and keep a trading journal
+              before considering real-money trading.
+            </li>
+          </ul>
+
+          <h2 id="checklist">8. Beginner's learning checklist</h2>
+
+          <p>
+            Before considering a live trade, make sure you can explain
+            each of the following in your own words:
+          </p>
+
+          <ol>
+            <li>How a currency pair is quoted and what its price means.</li>
+            <li>The difference between bid, ask, spread and pip.</li>
+            <li>How buy and sell positions respond to price movements.</li>
+            <li>How position size affects potential gains and losses.</li>
+            <li>How leverage and margin work and why they are risky.</li>
+            <li>How orders work and why execution prices can differ.</li>
+            <li>How to define a risk limit before entering a trade.</li>
+          </ol>
+
+          <h2 id="faq">Frequently asked questions</h2>
+
+          <h3>Can beginners make money trading forex?</h3>
+
+          <p>
+            Forex outcomes are uncertain, and many retail traders lose
+            money. Results depend on market conditions, trading costs,
+            position sizing, experience and risk management. No method
+            can guarantee profits.
+          </p>
+
+          <h3>How much money do I need to start?</h3>
+
+          <p>
+            Minimum deposits and trading conditions vary by provider
+            and jurisdiction. A low minimum deposit does not make trading
+            low-risk. Understand the product, costs and possible losses
+            before depositing money.
+          </p>
+
+          <h3>Is forex trading open 24 hours a day?</h3>
+
+          <p>
+            The global forex market operates across financial centres
+            during the business week. Exact trading hours, breaks and
+            holiday schedules depend on the instrument and provider.
+            Check the schedule on your platform.
+          </p>
+
+          <h3>Is leverage necessary to trade forex?</h3>
+
+          <p>
+            Leverage is available through many retail providers, but it
+            is not a shortcut to profit. It increases exposure and can
+            magnify losses. Availability, limits and protections vary
+            by jurisdiction and provider.
+          </p>
+
+          <h3>Can a stop-loss eliminate trading risk?</h3>
+
+          <p>
+            No. A stop-loss can help define an exit level, but execution
+            may differ from the requested price in fast or gapping markets.
+            It cannot guarantee that every loss will remain within the
+            planned amount.
+          </p>
+
+          <div class="ftw-next">
+            <h2>What Should You Learn Next?</h2>
+
+            <p>
+              Build your understanding of the forex market by learning
+              about currency pairs, pips and the basic concepts behind
+              foreign exchange.
+            </p>
+
+            <ul>
+              <li>
+                <a href="./currency-pairs.html">
+                  What Is a Currency Pair? →
+                </a>
+              </li>
+              <li>
+                <a href="./what-is-a-pip.html">
+                  What Is a Pip in Forex? →
+                </a>
+              </li>
+              <li>
+                <a href="./what-is-forex.html">
+                  What Is Forex? →
+                </a>
+              </li>
+              <li>
+                <a href="./">
+                  Explore the Forex Basics learning path →
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="ftw-disclaimer">
+            <strong>Educational disclaimer:</strong> This content is
+            provided for general educational purposes only. It is not
+            investment advice, financial advice or a recommendation
+            to buy or sell any financial instrument.
+          </p>
+        </article>
+
+        <aside class="ftw-toc" aria-label="Article contents">
+          <h2>On This Page</h2>
+          <ol>
+            <li><a href="#pairs">Currency pairs</a></li>
+            <li><a href="#direction">Buy or sell</a></li>
+            <li><a href="#example">Trade example</a></li>
+            <li><a href="#costs">Trading costs</a></li>
+            <li><a href="#leverage">Leverage and margin</a></li>
+            <li><a href="#orders">Order types</a></li>
+            <li><a href="#risk">Risk management</a></li>
+            <li><a href="#checklist">Learning checklist</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ol>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="../">Forex <span>Clarity</span></a>
+        <p>Clear and practical forex education.</p>
+      </div>
+
+      <div>
+        <h3>Learn</h3>
+        <a href="./">Forex Basics</a>
+        <a href="./what-is-forex.html">What Is Forex?</a>
+        <a href="./currency-pairs.html">Currency Pairs</a>
+        <a href="./what-is-a-pip.html">What Is a Pip?</a>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="../#analysis">Technical Analysis</a>
+        <a href="../#risk">Risk Management</a>
+        <a href="../about/">About</a>
+      </div>
+
+      <div>
+        <h3>Information</h3>
+        <p>Educational content only.</p>
+        <p>Not financial advice.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Forex Clarity. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
