@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What Is Spread in Forex? A Beginner's Guide | Forex Clarity</title>
+  <meta name="description" content="Learn what the forex spread is, how bid and ask prices work, how to calculate spreads in pips, and how spreads affect trading costs with practical examples.">
+
+  <link rel="canonical" href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-forex-spread.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What Is Spread in Forex? A Beginner's Guide">
+  <meta property="og:description" content="Understand bid and ask prices, calculate forex spreads, compare fixed and variable spreads, and learn how spreads affect trading costs.">
+  <meta property="og:url" content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-forex-spread.html">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .cp-article {
+      padding: 1.5rem 0 4rem;
+    }
+
+    .cp-container {
+      width: min(1120px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .cp-breadcrumbs {
+      padding: 1rem 0;
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .cp-breadcrumbs a,
+    .cp-content a {
+      color: var(--accent-dark, #2563eb);
+      text-underline-offset: .18em;
+    }
+
+    .cp-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 230px;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+    }
+
+    .cp-content {
+      min-width: 0;
+      max-width: 780px;
+      font-size: 1.03rem;
+      line-height: 1.85;
+      overflow-wrap: anywhere;
+    }
+
+    .cp-content > p:first-child {
+      font-size: 1.1rem;
+    }
+
+    .cp-content p {
+      margin: 0 0 1.15rem;
+    }
+
+    .cp-content h2 {
+      margin: 2.8rem 0 1rem;
+      line-height: 1.3;
+      letter-spacing: -.02em;
+      scroll-margin-top: 2rem;
+    }
+
+    .cp-content h3 {
+      margin: 1.8rem 0 .65rem;
+      line-height: 1.4;
+      scroll-margin-top: 2rem;
+    }
+
+    .cp-content ul,
+    .cp-content ol {
+      padding-left: 1.4rem;
+      margin: .75rem 0 1.5rem;
+    }
+
+    .cp-content li {
+      margin: .45rem 0;
+      padding-left: .15rem;
+    }
+
+    .cp-callout {
+      margin: 1.6rem 0;
+      padding: 1.15rem 1.3rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-left: 4px solid var(--accent, #3b82f6);
+      border-radius: .8rem;
+      background: var(--surface-soft, #f1f5fa);
+    }
+
+    .cp-callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-callout-label {
+      display: block;
+      margin-bottom: .35rem;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .cp-sidebar {
+      position: sticky;
+      top: 1.25rem;
+    }
+
+    .cp-toc {
+      padding: 1.2rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .9rem;
+      background: var(--surface, #fff);
+    }
+
+    .cp-toc h2 {
+      margin: 0 0 .8rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    .cp-toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .cp-toc li {
+      margin: .4rem 0;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .cp-toc a {
+      color: var(--text, inherit);
+      text-decoration: none;
+    }
+
+    .cp-toc a:hover,
+    .cp-toc a:focus-visible {
+      color: var(--accent-dark, #2563eb);
+      text-decoration: underline;
+    }
+
+    .cp-sidebar-note {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: .8rem;
+      background: var(--surface-soft, #f1f5fa);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .cp-sidebar-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-table-wrap {
+      margin: 1.35rem 0 1.6rem;
+      overflow-x: auto;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .8rem;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .cp-content table {
+      width: 100%;
+      min-width: 480px;
+      border-collapse: collapse;
+      font-size: .95rem;
+      line-height: 1.65;
+    }
+
+    .cp-content th,
+    .cp-content td {
+      padding: .85rem 1rem;
+      border-bottom: 1px solid var(--line, #e4e9f0);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .cp-content th {
+      background: var(--surface-soft, #f1f5fa);
+      font-weight: 750;
+    }
+
+    .cp-content tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .cp-example {
+      margin: 1.25rem 0 1.6rem;
+      padding: 1.2rem 1.3rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .85rem;
+    }
+
+    .cp-example h3 {
+      margin-top: 0;
+    }
+
+    .cp-content details {
+      margin: .8rem 0 1.1rem;
+      padding: .95rem 1rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .75rem;
+      background: var(--surface, #fff);
+    }
+
+    .cp-content summary {
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    .cp-content summary:focus-visible {
+      outline: 2px solid var(--accent, #3b82f6);
+      outline-offset: 4px;
+    }
+
+    .cp-content details p {
+      margin: .8rem 0 0;
+    }
+
+    .cp-next {
+      margin-top: 3rem;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: 1rem;
+      background: var(--surface-soft, #f1f5fa);
+    }
+
+    .cp-next h2 {
+      margin-top: 0;
+    }
+
+    .cp-next p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-next-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 850px) {
+      .cp-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .cp-sidebar {
+        position: static;
+        order: -1;
+      }
+
+      .cp-toc ol {
+        columns: 2;
+        column-gap: 2rem;
+      }
+
+      .cp-toc li {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .cp-article {
+        padding-top: 1rem;
+      }
+
+      .cp-container {
+        width: min(100% - 1.25rem, 1120px);
+      }
+
+      .cp-content {
+        font-size: 1rem;
+      }
+
+      .cp-content h2 {
+        margin-top: 2.3rem;
+      }
+
+      .cp-toc ol {
+        columns: 1;
+      }
+
+      .cp-content th,
+      .cp-content td {
+        padding: .7rem;
+      }
+
+      .cp-callout {
+        padding: 1rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is Spread in Forex? A Beginner's Guide",
+    "description": "Learn how forex spreads work, how to calculate the difference between bid and ask prices, and how spreads affect trading costs.",
+    "author": {
+      "@type": "Organization",
+      "name": "Forex Clarity"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Forex Clarity"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-a-forex-spread.html"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../">Forex <span>Clarity</span></a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Forex Basics</a>
+      <a href="../#analysis">Analysis</a>
+      <a href="../#strategies">Strategies</a>
+      <a href="../#risk">Risk Management</a>
+    </nav>
+
+    <a class="header-button" href="../#learn">Start Learning</a>
+  </div>
+</header>
+
+<nav class="cp-breadcrumbs" aria-label="Breadcrumb">
+  <div class="cp-container">
+    <a href="../">Home</a>
+    <span aria-hidden="true"> / </span>
+    <a href="./">Forex Basics</a>
+    <span aria-hidden="true"> / </span>
+    <span aria-current="page">Forex Spread</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <p class="eyebrow">FOREX BASICS</p>
+
+      <h1>What Is a <span>Spread in Forex?</span></h1>
+
+      <div class="article-byline">
+        <span>By Ali Moayyed and Nasrin Kheyrdost</span>
+      </div>
+
+      <p class="hero-description">
+        Learn what the forex spread means, how bid and ask prices work,
+        how to calculate a spread in pips, and why it matters when
+        understanding the cost of a trade.
+      </p>
+    </div>
+  </div>
+</section>
+
+<main class="cp-article">
+  <div class="cp-container">
+    <div class="cp-layout">
+
+      <article class="cp-content">
+
+        <p>
+          When you look at a forex trading platform, you may notice that
+          the displayed buying price and selling price are slightly
+          different. That difference is called the <strong>spread</strong>.
+          It is one of the basic costs traders need to understand before
+          evaluating a trade.
+        </p>
+
+        <p>
+          For example, a platform might show EUR/USD with a bid price of
+          1.1000 and an ask price of 1.1002. The difference is 0.0002,
+          equivalent to 2 pips under the usual pip convention for EUR/USD.
+          This is an illustrative example, not a live market quote.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Key idea</span>
+          <p>
+            <strong>Spread = Ask price − Bid price.</strong>
+            The spread is the difference between the price at which a
+            provider is willing to buy and the price at which it is
+            willing to sell a currency pair at that moment.
+          </p>
+        </div>
+
+        <h2 id="meaning">1. What Is a Forex Spread?</h2>
+
+        <p>
+          A forex spread is the difference between the bid and ask prices
+          quoted for a currency pair. The bid is generally the price at
+          which you can sell the base currency, while the ask is generally
+          the price at which you can buy it, subject to the product and
+          execution conditions offered by your provider.
+        </p>
+
+        <p>
+          The two prices are often displayed together. Because the ask is
+          usually higher than the bid, a trader entering and immediately
+          closing a position under unchanged prices would generally face
+          the spread as an initial trading cost, before commissions,
+          slippage or other charges.
+        </p>
+
+        <p>
+          Spreads can change over time. They may differ between currency
+          pairs, providers, account types and market conditions. A spread
+          observed at one moment should not be assumed to remain the same.
+        </p>
+
+        <h2 id="bid-ask">2. What Are Bid and Ask Prices?</h2>
+
+        <p>
+          To understand the spread, first learn the meaning of the two
+          prices that make it up.
+        </p>
+
+        <div class="cp-table-wrap" role="region" aria-label="Bid and ask definitions" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Term</th>
+                <th scope="col">Meaning</th>
+                <th scope="col">Typical action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bid</strong></td>
+                <td>The quoted price at which the provider is willing to buy.</td>
+                <td>A trader generally sells at the bid.</td>
+              </tr>
+              <tr>
+                <td><strong>Ask</strong></td>
+                <td>The quoted price at which the provider is willing to sell.</td>
+                <td>A trader generally buys at the ask.</td>
+              </tr>
+              <tr>
+                <td><strong>Spread</strong></td>
+                <td>The difference between the ask and the bid.</td>
+                <td>It contributes to the cost of entering a trade.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example: Reading a EUR/USD quote</h3>
+          <p>Suppose a platform displays these illustrative prices:</p>
+          <ul>
+            <li>Bid: <strong>1.1000</strong></li>
+            <li>Ask: <strong>1.1002</strong></li>
+          </ul>
+          <p>
+            A trader selling EUR/USD would generally transact at the bid,
+            while a trader buying EUR/USD would generally transact at the
+            ask. The difference between the two prices is 0.0002.
+          </p>
+        </div>
+
+        <p>
+          Actual execution can differ from a displayed quote. Prices may
+          change before an order is filled, and the product's rules,
+          available liquidity and order type can affect execution.
+        </p>
+
+        <h2 id="calculation">3. How to Calculate a Forex Spread</h2>
+
+        <p>
+          The basic calculation is simple: subtract the bid price from
+          the ask price. To express the result in pips, compare the
+          difference with the pip size conventionally used for that
+          currency pair.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Formula</span>
+          <p><strong>Spread in price terms = Ask − Bid</strong></p>
+          <p>
+            For many non-JPY currency pairs, one pip is 0.0001.
+            For many JPY pairs, one pip is 0.01. Confirm the convention
+            used for the instrument you are studying.
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example A: EUR/USD has a 2-pip spread</h3>
+          <p>
+            Assume the bid is 1.1000 and the ask is 1.1002.
+          </p>
+          <p><strong>1.1002 − 1.1000 = 0.0002</strong></p>
+          <p>
+            With a pip size of 0.0001:
+          </p>
+          <p><strong>0.0002 ÷ 0.0001 = 2 pips</strong></p>
+          <p>
+            The spread is 2 pips in this example. It does not, by itself,
+            tell you the total cash cost of a position; position size,
+            account currency and any additional charges also matter.
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example B: USD/JPY has a 3-pip spread</h3>
+          <p>
+            Suppose the bid is 150.00 and the ask is 150.03.
+          </p>
+          <p><strong>150.03 − 150.00 = 0.03</strong></p>
+          <p>
+            Using a conventional pip size of 0.01 for this example:
+          </p>
+          <p><strong>0.03 ÷ 0.01 = 3 pips</strong></p>
+          <p>
+            The spread is 3 pips. Some platforms also display fractional
+            pip digits, so pay attention to the quote format.
+          </p>
+        </div>
+
+        <h2 id="spread-cost">4. How Does the Spread Affect Trading Costs?</h2>
+
+        <p>
+          The spread is one component of trading cost. When a position
+          is opened, the bid and ask difference generally means that
+          the position begins with an adverse price difference compared
+          with immediately reversing the transaction at unchanged quotes.
+        </p>
+
+        <p>
+          The financial effect depends on the instrument, position size,
+          pip value, account currency and execution. A spread of 2 pips
+          does not represent the same cash amount for every trade.
+        </p>
+
+        <div class="cp-example">
+          <h3>Illustrative cost example</h3>
+          <p>
+            Imagine that the spread is 2 pips and that, for a particular
+            position and account, one pip is worth $1. The spread-related
+            amount would be approximately:
+          </p>
+          <p><strong>2 pips × $1 per pip = $2</strong></p>
+          <p>
+            This example assumes a known pip value and excludes
+            commissions, slippage, financing and other charges. The
+            actual value of a pip varies with the instrument, position
+            size, exchange rate and account currency.
+          </p>
+        </div>
+
+        <p>
+          For a fuller understanding of price movements, read
+          <a href="./what-is-a-pip.html">What Is a Pip in Forex?</a>
+          You can also review
+          <a href="./how-forex-trading-works.html">How Does Forex Trading Work?</a>
+          to see how trading costs fit into the mechanics of a position.
+        </p>
+
+        <h2 id="types">5. Fixed vs. Variable Spreads</h2>
+
+        <p>
+          Trading providers may offer different spread arrangements.
+          The labels below describe common approaches, but the exact
+          terms depend on the provider and account agreement.
+        </p>
+
+        <h3>Fixed spreads</h3>
+        <p>
+          A fixed spread is designed to remain at a stated level or
+          within defined terms under specified conditions. However,
+          a provider's terms may allow spreads to change during
+          exceptional market conditions, and execution prices are
+          not guaranteed.
+        </p>
+
+        <h3>Variable or floating spreads</h3>
+        <p>
+          A variable spread changes with market conditions. It may
+          narrow when liquidity is strong and widen when liquidity
+          is lower or volatility rises. The actual behaviour depends
+          on the provider, instrument and trading environment.
+        </p>
+
+        <div class="cp-table-wrap" role="region" aria-label="Fixed and variable spreads comparison" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Fixed spread</th>
+                <th scope="col">Variable spread</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Typical behaviour</td>
+                <td>Designed to stay near a stated level under defined terms.</td>
+                <td>Changes as quotes and market conditions change.</td>
+              </tr>
+              <tr>
+                <td>Predictability</td>
+                <td>May be more predictable in ordinary conditions.</td>
+                <td>Can be narrow at some times and wider at others.</td>
+              </tr>
+              <tr>
+                <td>Important limitation</td>
+                <td>Terms and exceptions still need to be checked.</td>
+                <td>Displayed spreads can widen, especially during volatile periods.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Neither type is automatically cheaper in every situation.
+          Compare the actual spread, commission, execution quality and
+          other charges for the account and instrument you intend to study.
+        </p>
+
+        <h2 id="spread-changes">6. Why Do Spreads Change?</h2>
+
+        <p>
+          A spread is influenced by several factors. The same currency
+          pair may have different spreads at different times or across
+          different providers.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Liquidity:</strong> when fewer buyers and sellers are
+            available at competitive prices, spreads may widen.
+          </li>
+          <li>
+            <strong>Volatility:</strong> rapid price changes can increase
+            uncertainty and lead to wider quotes.
+          </li>
+          <li>
+            <strong>Economic announcements:</strong> major data releases
+            and central-bank decisions can affect prices and liquidity.
+          </li>
+          <li>
+            <strong>Time of day:</strong> market activity and liquidity
+            vary across trading sessions and around session transitions.
+          </li>
+          <li>
+            <strong>Currency pair:</strong> spreads differ across
+            instruments; a widely traded pair is not guaranteed to
+            have the lowest spread at every moment.
+          </li>
+          <li>
+            <strong>Provider and account type:</strong> pricing models,
+            commissions and account terms can produce different total costs.
+          </li>
+        </ul>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Beginner tip</span>
+          <p>
+            Do not judge a provider by a single advertised minimum spread.
+            Check the typical spread, when it was measured, any commission,
+            and the terms that apply during volatile market conditions.
+          </p>
+        </div>
+
+        <h2 id="spread-and-pips">7. What Is the Difference Between a Spread and a Pip?</h2>
+
+        <p>
+          A pip is a unit commonly used to describe a change in a forex
+          price. A spread is the difference between the ask and bid prices.
+          A spread can be expressed in pips, but the two terms do not
+          mean the same thing.
+        </p>
+
+        <div class="cp-table-wrap" role="region" aria-label="Spread versus pip comparison" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Concept</th>
+                <th scope="col">What it describes</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pip</strong></td>
+                <td>A conventional unit for measuring price movement.</td>
+                <td>EUR/USD moves from 1.1000 to 1.1005: 5 pips.</td>
+              </tr>
+              <tr>
+                <td><strong>Spread</strong></td>
+                <td>The difference between ask and bid prices.</td>
+                <td>Bid 1.1000, ask 1.1002: 2 pips.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Learn the underlying measurement first in
+          <a href="./what-is-a-pip.html">What Is a Pip in Forex?</a>
+          Then return to this guide to understand how the bid-ask
+          difference is expressed in pips.
+        </p>
+
+        <h2 id="mistakes">8. Common Beginner Mistakes</h2>
+
+        <ul>
+          <li>
+            <strong>Confusing spread with commission:</strong> the spread
+            is the bid-ask difference; a commission is a separate charge
+            that may apply to a trade.
+          </li>
+          <li>
+            <strong>Assuming a spread never changes:</strong> variable
+            spreads can move as market conditions change.
+          </li>
+          <li>
+            <strong>Looking only at the advertised minimum:</strong>
+            minimum values may not reflect the spread available when
+            you trade.
+          </li>
+          <li>
+            <strong>Assuming a pip has the same cash value in every trade:</strong>
+            pip value depends on the instrument, position size and
+            account currency.
+          </li>
+          <li>
+            <strong>Ignoring other costs:</strong> commissions, slippage,
+            overnight financing and other charges may affect the total.
+          </li>
+          <li>
+            <strong>Assuming a low spread makes a trade profitable:</strong>
+            price movement can still result in a loss, and trading costs
+            do not determine market direction.
+          </li>
+        </ul>
+
+        <h2 id="practice">9. Test Your Understanding</h2>
+
+        <p>
+          Try each question before opening the answer. These exercises
+          test your understanding of spreads, not your ability to predict
+          market movements.
+        </p>
+
+        <h3>Question 1</h3>
+        <p>
+          EUR/USD has a bid of 1.1050 and an ask of 1.1053.
+          What is the spread in pips?
+        </p>
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            The price difference is 1.1053 − 1.1050 = 0.0003.
+            Using a pip size of 0.0001, the spread is 3 pips.
+          </p>
+        </details>
+
+        <h3>Question 2</h3>
+        <p>
+          Is a pip the same thing as a spread?
+        </p>
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            No. A pip is a unit for describing price movement. The spread
+            is the difference between the ask and bid prices, and it can
+            be expressed in pips.
+          </p>
+        </details>
+
+        <h3>Question 3</h3>
+        <p>
+          Why might a variable spread widen around a major economic announcement?
+        </p>
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            Volatility and uncertainty may rise while available liquidity
+            changes. The result can be a wider difference between bid and
+            ask prices, although the exact response depends on the market
+            and provider.
+          </p>
+        </details>
+
+        <h3>Question 4</h3>
+        <p>
+          If a spread is 2 pips, can you calculate the exact cash cost
+          without knowing anything else about the trade?
+        </p>
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            No. You need information such as position size, pip value and
+            account currency. Commissions, slippage and other costs may
+            also apply.
+          </p>
+        </details>
+
+        <h2 id="faq">10. Frequently Asked Questions</h2>
+
+        <h3>What is a spread in forex in simple terms?</h3>
+        <p>
+          It is the difference between the bid price and the ask price
+          quoted for a currency pair.
+        </p>
+
+        <h3>How do I calculate the spread in pips?</h3>
+        <p>
+          Subtract the bid from the ask, then divide the price difference
+          by the conventional pip size for that pair. Many non-JPY pairs
+          use 0.0001 per pip, while many JPY pairs use 0.01.
+        </p>
+
+        <h3>Is a lower spread always better?</h3>
+        <p>
+          A lower spread can reduce one component of trading costs, but
+          it does not automatically mean the overall service is cheaper.
+          Check commissions, execution quality, slippage and other terms.
+        </p>
+
+        <h3>Why does the spread sometimes become wider?</h3>
+        <p>
+          Spreads may widen when liquidity is lower or volatility and
+          uncertainty rise, such as around some economic announcements
+          or market transitions.
+        </p>
+
+        <h3>Are spreads the only cost of forex trading?</h3>
+        <p>
+          No. Depending on the product and provider, other costs may
+          include commissions, slippage, overnight financing and
+          currency conversion charges.
+        </p>
+
+        <h3>Can a spread predict whether a trade will be profitable?</h3>
+        <p>
+          No. A spread is a pricing difference, not a directional signal.
+          It does not predict future prices or guarantee a trading result.
+        </p>
+
+        <section class="cp-next" aria-labelledby="continue-learning">
+          <h2 id="continue-learning">Continue Learning</h2>
+
+          <p>
+            Now that you understand the spread, continue with the
+            fundamentals of forex prices and trading mechanics.
+            Understanding each concept separately can help you see
+            how they fit together, but it cannot remove market risk.
+          </p>
+
+          <div class="cp-next-links">
+            <a href="./">Explore Forex Basics →</a>
+            <a href="./what-is-a-pip.html">Next: What Is a Pip? →</a>
+            <a href="./currency-pairs.html">Review: Currency Pairs</a>
+            <a href="./how-forex-trading-works.html">How Forex Trading Works</a>
+          </div>
+        </section>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Learning reminder</span>
+          <p>
+            Understanding spreads helps you recognise one part of trading
+            costs. It does not predict price direction or remove the
+            risks of leveraged forex products.
+          </p>
+        </div>
+
+      </article>
+
+      <aside class="cp-sidebar" aria-label="Article navigation">
+        <nav class="cp-toc" aria-labelledby="toc-title">
+          <h2 id="toc-title">On this page</h2>
+          <ol>
+            <li><a href="#meaning">What Is a Forex Spread?</a></li>
+            <li><a href="#bid-ask">Bid and Ask Prices</a></li>
+            <li><a href="#calculation">Calculate a Spread</a></li>
+            <li><a href="#spread-cost">Trading Costs</a></li>
+            <li><a href="#types">Fixed vs. Variable</a></li>
+            <li><a href="#spread-changes">Why Spreads Change</a></li>
+            <li><a href="#spread-and-pips">Spread vs. Pip</a></li>
+            <li><a href="#mistakes">Common Mistakes</a></li>
+            <li><a href="#practice">Test Your Understanding</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ol>
+        </nav>
+
+        <div class="cp-sidebar-note">
+          <strong>New to forex?</strong>
+          <p>
+            Start with
+            <a href="./what-is-forex.html">What Is Forex?</a>
+            before moving on to spreads and trading costs.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <a class="logo footer-logo" href="../">Forex <span>Clarity</span></a>
+      <p>Clear and practical forex education.</p>
+    </div>
+
+    <div>
+      <h3>Learn</h3>
+      <a href="./">Forex Basics</a>
+      <a href="./what-is-forex.html">What Is Forex?</a>
+      <a href="./what-is-a-pip.html">What Is a Pip?</a>
+      <a href="./currency-pairs.html">Currency Pairs</a>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="../#analysis">Technical Analysis</a>
+      <a href="../#risk">Risk Management</a>
+      <a href="../#about">About</a>
+    </div>
+
+    <div>
+      <h3>Information</h3>
+      <p>Educational content only.</p>
+      <p>Not financial advice.</p>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Forex Clarity. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
