@@ -1,24 +1,35 @@
 :root {
-  --bg: #f7f9fc;
-  --surface: #ffffff;
-  --surface-soft: #f1f5fa;
-  --text: #101828;
-  --text-soft: #667085;
-  --line: #e4e9f0;
-  --dark: #0b1220;
-  --dark-soft: #121c2e;
-  --accent: #2563eb;
-  --accent-dark: #2563eb;
-  --accent-light: #eaf2ff;
-  --success: #36b37e;
+  /* Brand colors */
+  --bg: #F5F8FC;
+  --surface: #FFFFFF;
+  --surface-soft: #EDF3FA;
 
+  --text: #17263D;
+  --text-soft: #596A80;
+  --line: #DCE5F0;
+
+  /* Professional navy */
+  --dark: #10233F;
+  --dark-soft: #183454;
+
+  /* Brand blue */
+  --accent: #2563EB;
+  --accent-dark: #1D4ED8;
+  --accent-light: #EAF2FF;
+
+  /* Status */
+  --success: #16845B;
+
+  /* Layout */
   --container: 1180px;
   --radius: 18px;
   --radius-small: 12px;
 
-  --shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
-  --shadow-hover: 0 18px 45px rgba(15, 23, 42, 0.11);
+  /* Shadows */
+  --shadow: 0 12px 35px rgba(15, 35, 63, 0.07);
+  --shadow-hover: 0 18px 45px rgba(15, 35, 63, 0.11);
 }
+
 
 
 /* =========================
