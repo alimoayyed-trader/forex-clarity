@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What Is Leverage in Forex? A Beginner’s Guide | Forex Clarity</title>
+  <meta name="description" content="Learn what leverage in forex means, how leverage ratios and margin work, how to calculate trading exposure, and why leverage increases both potential profits and losses.">
+
+  <link rel="canonical" href="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-leverage-in-forex.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What Is Leverage in Forex? A Beginner’s Guide">
+  <meta property="og:description" content="Understand forex leverage, margin requirements, position exposure, practical calculations and the risks of leveraged trading.">
+  <meta property="og:url" content="https://alimoayyed-trader.github.io/forex-clarity/forex-basics/what-is-leverage-in-forex.html">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    /* Forex Leverage article: brand colors come from the shared stylesheet. */
+
+    .cp-article {
+      padding: 1.5rem 0 4rem;
+    }
+
+    .cp-container {
+      width: min(1120px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .cp-breadcrumbs {
+      padding: 1rem 0;
+      color: var(--text-soft, #667085);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .cp-breadcrumbs a {
+      color: var(--accent-dark, #2563eb);
+      text-underline-offset: .18em;
+    }
+
+    .cp-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 230px;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+    }
+
+    .cp-content {
+      min-width: 0;
+      max-width: 780px;
+      font-size: 1.03rem;
+      line-height: 1.85;
+      overflow-wrap: anywhere;
+    }
+
+    .cp-content > p:first-child {
+      font-size: 1.1rem;
+    }
+
+    .cp-content p {
+      margin: 0 0 1.15rem;
+    }
+
+    .cp-content h2 {
+      margin: 2.8rem 0 1rem;
+      line-height: 1.3;
+      letter-spacing: -.02em;
+      scroll-margin-top: 2rem;
+    }
+
+    .cp-content h3 {
+      margin: 1.8rem 0 .65rem;
+      line-height: 1.4;
+      scroll-margin-top: 2rem;
+    }
+
+    .cp-content ul {
+      padding-left: 1.4rem;
+      margin: .75rem 0 1.5rem;
+    }
+
+    .cp-content li {
+      margin: .45rem 0;
+      padding-left: .15rem;
+    }
+
+    .cp-content a {
+      color: var(--accent-dark, #2563eb);
+      text-underline-offset: .18em;
+    }
+
+    .cp-callout {
+      margin: 1.6rem 0;
+      padding: 1.15rem 1.3rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-left: 4px solid var(--accent, #3b82f6);
+      border-radius: .8rem;
+      background: var(--surface-soft, #f1f5fa);
+    }
+
+    .cp-callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-callout-label {
+      display: block;
+      margin-bottom: .35rem;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .cp-sidebar {
+      position: sticky;
+      top: 1.25rem;
+    }
+
+    .cp-toc {
+      padding: 1.2rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .9rem;
+      background: var(--surface, #fff);
+    }
+
+    .cp-toc h2 {
+      margin: 0 0 .8rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    .cp-toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .cp-toc li {
+      margin: .4rem 0;
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .cp-toc a {
+      color: var(--text, inherit);
+      text-decoration: none;
+      text-underline-offset: .18em;
+    }
+
+    .cp-toc a:hover,
+    .cp-toc a:focus-visible {
+      color: var(--accent-dark, #2563eb);
+      text-decoration: underline;
+    }
+
+    .cp-sidebar-note {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: .8rem;
+      background: var(--surface-soft, #f1f5fa);
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .cp-sidebar-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-table-wrap {
+      margin: 1.35rem 0 1.6rem;
+      overflow-x: auto;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .8rem;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .cp-content table {
+      width: 100%;
+      min-width: 480px;
+      border-collapse: collapse;
+      font-size: .95rem;
+      line-height: 1.65;
+    }
+
+    .cp-content th,
+    .cp-content td {
+      padding: .85rem 1rem;
+      border-bottom: 1px solid var(--line, #e4e9f0);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .cp-content th {
+      background: var(--surface-soft, #f1f5fa);
+      font-weight: 750;
+    }
+
+    .cp-content tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .cp-example {
+      margin: 1.25rem 0 1.6rem;
+      padding: 1.2rem 1.3rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .85rem;
+    }
+
+    .cp-example h3 {
+      margin-top: 0;
+    }
+
+    .cp-content details {
+      margin: .8rem 0 1.1rem;
+      padding: .95rem 1rem;
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: .75rem;
+      background: var(--surface, #fff);
+    }
+
+    .cp-content summary {
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    .cp-content summary:focus-visible {
+      outline: 2px solid var(--accent, #3b82f6);
+      outline-offset: 4px;
+    }
+
+    .cp-content details p {
+      margin: .8rem 0 0;
+    }
+
+    .cp-next {
+      margin-top: 3rem;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      border: 1px solid var(--line, #e4e9f0);
+      border-radius: 1rem;
+      background: var(--surface-soft, #f1f5fa);
+    }
+
+    .cp-next h2 {
+      margin-top: 0;
+    }
+
+    .cp-next p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cp-next-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 850px) {
+      .cp-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .cp-sidebar {
+        position: static;
+        order: -1;
+      }
+
+      .cp-toc ol {
+        columns: 2;
+        column-gap: 2rem;
+      }
+
+      .cp-toc li {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .cp-article {
+        padding-top: 1rem;
+      }
+
+      .cp-container {
+        width: min(100% - 1.25rem, 1120px);
+      }
+
+      .cp-content {
+        font-size: 1rem;
+      }
+
+      .cp-content h2 {
+        margin-top: 2.3rem;
+      }
+
+      .cp-toc ol {
+        columns: 1;
+      }
+
+      .cp-content th,
+      .cp-content td {
+        padding: .7rem;
+      }
+
+      .cp-callout {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../">Forex <span>Clarity</span></a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Forex Basics</a>
+      <a href="../#analysis">Analysis</a>
+      <a href="../#strategies">Strategies</a>
+      <a href="../#risk">Risk Management</a>
+    </nav>
+
+    <a class="header-button" href="../#learn">Start Learning</a>
+  </div>
+</header>
+
+<nav class="cp-breadcrumbs" aria-label="Breadcrumb">
+  <div class="cp-container">
+    <a href="../">Home</a>
+    <span aria-hidden="true"> / </span>
+    <a href="./">Forex Basics</a>
+    <span aria-hidden="true"> / </span>
+    <span aria-current="page">Forex Leverage</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <p class="eyebrow">FOREX BASICS</p>
+
+      <h1>What Is <span>Leverage</span> in Forex?</h1>
+
+      <div class="article-byline">
+        <span>By Ali Moayyed and Nasrin Kheyrdost</span>
+      </div>
+
+      <p class="hero-description">
+        Learn how forex leverage works, what leverage ratios mean,
+        how margin is calculated, and why trading with leverage
+        can increase both potential gains and losses.
+      </p>
+    </div>
+  </div>
+</section>
+
+<main class="cp-article">
+  <div class="cp-container">
+    <div class="cp-layout">
+
+      <article class="cp-content">
+
+        <p>
+          Imagine controlling a trading position worth $10,000 while using
+          only $100 of your own account funds as the required margin. This
+          is the basic idea behind leverage: it allows a trader to gain
+          exposure to a position larger than the funds allocated to open it.
+        </p>
+
+        <p>
+          Leverage is widely used in retail forex trading. It can make
+          relatively small price movements have a significant effect on
+          account equity. However, it also increases the speed and size of
+          potential losses.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Key idea</span>
+          <p>
+            Leverage increases your market exposure relative to your own
+            funds. It does not make a trade safer, guarantee a profit,
+            or remove the possibility of losing money.
+          </p>
+        </div>
+
+        <h2 id="meaning">1. What Is Leverage in Forex?</h2>
+
+        <p>
+          Leverage is a trading mechanism that allows a trader to control
+          a position with a market value greater than the funds required
+          to open that position.
+        </p>
+
+        <p>
+          It is commonly expressed as a ratio, such as 1:10, 1:50 or 1:100.
+          The first number represents the relationship between the trader's
+          required funds and the total market exposure.
+        </p>
+
+        <p>
+          For example, leverage of 1:100 means that $1 of required margin
+          can support $100 of position exposure, subject to the broker's
+          rules and the applicable margin requirements.
+        </p>
+
+        <p>
+          If you are new to forex, first understand
+          <a href="./what-is-forex.html">what forex is</a>,
+          <a href="./currency-pairs.html">how currency pairs work</a>,
+          and
+          <a href="./how-forex-trading-works.html">how forex trading works</a>.
+          These concepts help explain what you are actually trading when
+          leverage is involved.
+        </p>
+
+        <h2 id="ratio">2. What Does a Leverage Ratio Mean?</h2>
+
+        <p>
+          A leverage ratio describes how large a position can be compared
+          with the margin required to open it. A higher ratio means that
+          less margin is required for the same position size.
+        </p>
+
+        <div class="cp-table-wrap" role="region" aria-label="Leverage ratio examples table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Leverage ratio</th>
+                <th scope="col">Margin percentage</th>
+                <th scope="col">Margin for $10,000 exposure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1:10</td>
+                <td>10%</td>
+                <td>$1,000</td>
+              </tr>
+              <tr>
+                <td>1:20</td>
+                <td>5%</td>
+                <td>$500</td>
+              </tr>
+              <tr>
+                <td>1:50</td>
+                <td>2%</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td>1:100</td>
+                <td>1%</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>1:200</td>
+                <td>0.5%</td>
+                <td>$50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          These figures are simplified examples. Actual requirements can
+          depend on the instrument, account type, broker, jurisdiction
+          and market conditions.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Remember</span>
+          <p>
+            A 1:100 leverage ratio does not mean that you must use the
+            maximum available leverage. The amount of leverage you actually
+            use depends on your position size and account equity.
+          </p>
+        </div>
+
+        <h2 id="margin">3. What Is Margin and How Is It Related to Leverage?</h2>
+
+        <p>
+          Margin is the amount of funds a broker requires to open or maintain
+          a leveraged position. It is not normally a separate trading fee.
+          Instead, it is funds set aside as collateral while the position
+          remains open.
+        </p>
+
+        <p>
+          Leverage and margin describe two sides of the same relationship:
+          leverage expresses the exposure relative to the required margin,
+          while margin expresses the required funds as a percentage of
+          the position value.
+        </p>
+
+        <h3>Initial margin</h3>
+
+        <p>
+          Initial margin is the amount required to open a position.
+          The exact requirement depends on the instrument and the broker's
+          margin rules.
+        </p>
+
+        <h3>Used margin</h3>
+
+        <p>
+          Used margin is the amount of account funds currently allocated
+          to support open positions.
+        </p>
+
+        <h3>Free margin</h3>
+
+        <p>
+          Free margin is the portion of account equity that is not currently
+          being used as margin. It can be available to support additional
+          positions or absorb losses, depending on the account's rules.
+        </p>
+
+        <h3>Margin level</h3>
+
+        <p>
+          Margin level is commonly calculated by dividing account equity
+          by used margin and multiplying the result by 100.
+        </p>
+
+        <div class="cp-example">
+          <h3>Example: Calculating margin level</h3>
+
+          <p>
+            Suppose an account has:
+          </p>
+
+          <ul>
+            <li>Account equity: $1,000</li>
+            <li>Used margin: $200</li>
+          </ul>
+
+          <p>
+            The calculation is:
+          </p>
+
+          <p>
+            <strong>Margin level = ($1,000 ÷ $200) × 100 = 500%</strong>
+          </p>
+
+          <p>
+            This is an illustrative account calculation. Brokers may use
+            different margin rules and thresholds for margin calls or
+            automatic position closures.
+          </p>
+        </div>
+
+        <h2 id="calculation">4. How to Calculate Leverage and Margin</h2>
+
+        <p>
+          You can use two simple formulas to understand the relationship
+          between position exposure, margin and leverage.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Formula 1 — Required margin</span>
+          <p>
+            <strong>Required Margin = Position Value ÷ Leverage Ratio</strong>
+          </p>
+        </div>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Formula 2 — Leverage</span>
+          <p>
+            <strong>Leverage = Position Value ÷ Required Margin</strong>
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example A: Calculate margin at 1:100</h3>
+
+          <p>
+            Assume you want to open a position with a notional value of
+            $10,000 and the required leverage is 1:100.
+          </p>
+
+          <p>
+            <strong>$10,000 ÷ 100 = $100</strong>
+          </p>
+
+          <p>
+            The illustrative required margin is $100.
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example B: Calculate the leverage ratio</h3>
+
+          <p>
+            Suppose a position has a value of $20,000 and requires
+            $400 in margin.
+          </p>
+
+          <p>
+            <strong>$20,000 ÷ $400 = 50</strong>
+          </p>
+
+          <p>
+            The implied leverage ratio is 1:50.
+          </p>
+        </div>
+
+        <p>
+          These calculations assume that the position value and margin
+          are expressed in the same currency. Currency conversion,
+          contract specifications and broker-specific margin rules
+          may affect real trading calculations.
+        </p>
+
+        <h2 id="exposure">5. What Is Position Exposure?</h2>
+
+        <p>
+          Position exposure is the total market value of the position
+          you control. It is different from the margin used to open it.
+        </p>
+
+        <p>
+          For example, a trader may have $500 of required margin supporting
+          a position with a notional value of $50,000. The trader is exposed
+          to price movements on the $50,000 position, not just the $500
+          margin amount.
+        </p>
+
+        <div class="cp-table-wrap" role="region" aria-label="Position exposure examples table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Position value</th>
+                <th scope="col">Leverage</th>
+                <th scope="col">Required margin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$5,000</td>
+                <td>1:50</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>$10,000</td>
+                <td>1:100</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>$25,000</td>
+                <td>1:50</td>
+                <td>$500</td>
+              </tr>
+              <tr>
+                <td>$50,000</td>
+                <td>1:100</td>
+                <td>$500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          This distinction is essential. A small margin requirement does
+          not mean that the position has a small market exposure or that
+          the potential loss is limited to the margin amount.
+        </p>
+
+        <h2 id="profit-loss">6. How Does Leverage Affect Profit and Loss?</h2>
+
+        <p>
+          Leverage does not change the direction of the market. It changes
+          how much exposure a trader can control relative to the funds
+          committed as margin.
+        </p>
+
+        <p>
+          Because profit and loss are determined by the size and movement
+          of the position, a larger position can create larger gains or
+          losses from the same percentage price movement.
+        </p>
+
+        <div class="cp-example">
+          <h3>Example: A 1% favourable price movement</h3>
+
+          <p>
+            Imagine a position with a notional value of $10,000. If the
+            position moves 1% in your favour, the simplified result
+            before costs is:
+          </p>
+
+          <p>
+            <strong>$10,000 × 1% = $100 potential gain</strong>
+          </p>
+
+          <p>
+            If the required margin was $100, this gain would equal
+            100% of that initial margin. This does not mean the account
+            is guaranteed to earn that return. It is an illustration
+            of how exposure relates to price movement.
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example: A 1% unfavourable price movement</h3>
+
+          <p>
+            If the same $10,000 position moves 1% against the trader,
+            the simplified loss before costs is:
+          </p>
+
+          <p>
+            <strong>$10,000 × 1% = $100 potential loss</strong>
+          </p>
+
+          <p>
+            The loss equals the original $100 margin in this simplified
+            example. In practice, the position may be closed earlier
+            because of margin requirements, or losses may differ because
+            of spreads, commissions, slippage, gaps and execution.
+          </p>
+        </div>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Important risk warning</span>
+          <p>
+            The margin deposited to open a trade is not necessarily
+            the maximum amount you can lose. Depending on the product,
+            provider, account protections and market conditions,
+            losses can exceed the initial margin.
+          </p>
+        </div>
+
+        <h2 id="effective">7. What Is Effective Leverage?</h2>
+
+        <p>
+          Effective leverage describes the actual exposure of a trader's
+          positions relative to the account equity. It can be different
+          from the maximum leverage offered by a broker.
+        </p>
+
+        <p>
+          A trader may have access to 1:100 leverage but choose a much
+          smaller position. In that case, the effective leverage may
+          be significantly lower.
+        </p>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Formula — Effective leverage</span>
+          <p>
+            <strong>Effective Leverage = Total Position Exposure ÷ Account Equity</strong>
+          </p>
+        </div>
+
+        <div class="cp-example">
+          <h3>Example: Effective leverage</h3>
+
+          <p>
+            Suppose a trader has account equity of $2,000 and opens
+            a position with a notional value of $10,000.
+          </p>
+
+          <p>
+            <strong>$10,000 ÷ $2,000 = 5</strong>
+          </p>
+
+          <p>
+            The effective leverage is 1:5, even if the broker offers
+            a higher maximum leverage ratio.
+          </p>
+        </div>
+
+        <p>
+          Effective leverage is useful for understanding how much
+          market exposure an account is carrying compared with
+          its current equity.
+        </p>
+
+        <h2 id="risks">8. The Main Risks of Using Leverage</h2>
+
+        <p>
+          Leverage can increase market exposure, but it also makes
+          risk management especially important. Traders should
+          understand the possible consequences before opening
+          a leveraged position.
+        </p>
+
+        <h3>Larger losses</h3>
+
+        <p>
+          A small adverse price movement can cause a meaningful
+          loss when the position size is large relative to account
+          equity.
+        </p>
+
+        <h3>Margin calls and stop-out</h3>
+
+        <p>
+          If account equity falls relative to used margin, a broker
+          may issue a margin warning or automatically close positions
+          when specified thresholds are reached. The exact rules vary
+          between providers and account types.
+        </p>
+
+        <h3>Market gaps and slippage</h3>
+
+        <p>
+          Prices can move sharply, especially around important news,
+          market openings or periods of low liquidity. A stop-loss
+          order may be executed at a different price from the requested
+          level if the market moves quickly.
+        </p>
+
+        <h3>Emotional pressure</h3>
+
+        <p>
+          Large positions can make normal price fluctuations feel
+          more significant. This can encourage impulsive decisions,
+          excessive trading or moving a stop-loss without a clear plan.
+        </p>
+
+        <h3>Unexpected trading costs</h3>
+
+        <p>
+          Spreads, commissions, swaps and other charges can affect
+          the result of a leveraged position. Learn
+          <a href="./what-is-a-forex-spread.html">what a forex spread is</a>
+          before evaluating the total cost of a trade.
+        </p>
+
+        <h2 id="risk-management">9. How to Manage Leverage Risk</h2>
+
+        <p>
+          Risk management begins with controlling the position size,
+          not simply choosing the highest leverage ratio available.
+          A trader should understand the potential loss before entering
+          a position.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Choose position size carefully:</strong>
+            do not increase exposure simply because a broker allows it.
+          </li>
+          <li>
+            <strong>Define invalidation:</strong>
+            identify the price level where the trade idea is no longer valid.
+          </li>
+          <li>
+            <strong>Calculate potential loss:</strong>
+            estimate the result if the stop-loss is reached, including
+            relevant trading costs.
+          </li>
+          <li>
+            <strong>Monitor margin:</strong>
+            understand used margin, free margin and your broker's
+            margin-call and stop-out policies.
+          </li>
+          <li>
+            <strong>Account for volatility:</strong>
+            market conditions can change quickly, especially around
+            economic announcements.
+          </li>
+          <li>
+            <strong>Avoid excessive exposure:</strong>
+            multiple positions may create overlapping risk, even
+            when they involve different currency pairs.
+          </li>
+          <li>
+            <strong>Practise before trading live:</strong>
+            a demo account can help you understand order size,
+            margin and platform calculations without risking
+            real trading capital.
+          </li>
+        </ul>
+
+        <div class="cp-callout">
+          <span class="cp-callout-label">Forex Clarity principle</span>
+          <p>
+            Do not open a trade unless you can identify its trigger,
+            invalidation level and maximum planned risk. Leverage
+            should never replace a trading plan.
+          </p>
+        </div>
+
+        <h2 id="mistakes">10. Common Beginner Mistakes About Leverage</h2>
+
+        <ul>
+          <li>
+            <strong>Confusing leverage with profit:</strong>
+            a higher leverage ratio does not automatically create
+            a profitable trade.
+          </li>
+          <li>
+            <strong>Thinking margin is the maximum possible loss:</strong>
+            margin is collateral, not necessarily a loss limit.
+          </li>
+          <li>
+            <strong>Using maximum available leverage:</strong>
+            the broker's maximum ratio is not a recommended position size.
+          </li>
+          <li>
+            <strong>Ignoring effective leverage:</strong>
+            actual exposure relative to account equity matters,
+            not just the advertised account ratio.
+          </li>
+          <li>
+            <strong>Ignoring trading costs:</strong>
+            spreads, commissions, swaps and slippage can affect
+            the final result.
+          </li>
+          <li>
+            <strong>Opening too many positions:</strong>
+            several trades can increase total exposure and
+            create correlated risk.
+          </li>
+        </ul>
+
+        <h2 id="practice">11. Test Your Understanding</h2>
+
+        <p>
+          Answer these questions to check whether you understand
+          leverage, margin and position exposure.
+        </p>
+
+        <h3>Question 1</h3>
+        <p>
+          What does leverage of 1:100 mean in a simplified margin calculation?
+        </p>
+
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            It means that $1 of required margin can support $100
+            of position exposure, subject to the applicable
+            margin rules.
+          </p>
+        </details>
+
+        <h3>Question 2</h3>
+        <p>
+          How much margin is required for a $20,000 position
+          at 1:100 leverage?
+        </p>
+
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            $20,000 ÷ 100 = $200 of illustrative required margin.
+          </p>
+        </details>
+
+        <h3>Question 3</h3>
+        <p>
+          Does a $100 margin requirement mean that the maximum
+          possible loss is $100?
+        </p>
+
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            No. Margin is collateral required to support a position.
+            Depending on the product, provider and market conditions,
+            losses may exceed the initial margin.
+          </p>
+        </details>
+
+        <h3>Question 4</h3>
+        <p>
+          A trader has $1,000 in account equity and controls
+          $5,000 in total position exposure. What is the
+          effective leverage?
+        </p>
+
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            $5,000 ÷ $1,000 = 5. The effective leverage is 1:5.
+          </p>
+        </details>
+
+        <h3>Question 5</h3>
+        <p>
+          Does choosing a lower leverage ratio guarantee that
+          a trade will be safe?
+        </p>
+
+        <details>
+          <summary>Show answer</summary>
+          <p>
+            No. Risk also depends on position size, volatility,
+            stop-loss placement, trading costs, market gaps
+            and the trader's overall exposure.
+          </p>
+        </details>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+
+        <h3>What is leverage in forex in simple words?</h3>
+        <p>
+          Leverage allows a trader to control a position larger
+          than the funds required to open it. It increases market
+          exposure and can magnify both gains and losses.
+        </p>
+
+        <h3>What does 1:100 leverage mean?</h3>
+        <p>
+          In a simplified example, 1:100 leverage means that
+          $100 of position exposure requires $1 of margin.
+          Actual margin requirements depend on the broker,
+          instrument and applicable regulations.
+        </p>
+
+        <h3>What is the difference between leverage and margin?</h3>
+        <p>
+          Leverage expresses the relationship between position
+          exposure and required funds. Margin is the amount of
+          funds required to open or maintain the position.
+          They describe opposite sides of the same relationship.
+        </p>
+
+        <h3>Does higher leverage increase profit?</h3>
+        <p>
+          Higher leverage can allow a trader to control a larger
+          position with the same margin. A larger position can
+          produce larger gains if the market moves favourably,
+          but it can also produce larger losses if the market
+          moves against the position.
+        </p>
+
+        <h3>Can I lose more than my initial margin?</h3>
+        <p>
+          Depending on the trading product, provider, account
+          protections and market conditions, losses can exceed
+          the initial margin. Check the provider's negative
+          balance protection and liquidation policies.
+        </p>
+
+        <h3>Is 1:500 leverage better than 1:100?</h3>
+        <p>
+          Not necessarily. A higher maximum leverage ratio
+          allows greater exposure relative to required margin,
+          but it does not improve the quality of a trading
+          decision or guarantee a better result.
+        </p>
+
+        <h3>What is effective leverage?</h3>
+        <p>
+          Effective leverage is total position exposure divided
+          by account equity. It shows how much exposure an
+          account is carrying relative to its current value.
+        </p>
+
+        <h3>Should beginners use high leverage?</h3>
+        <p>
+          Beginners should first understand position sizing,
+          margin requirements and potential losses. Using
+          the maximum available leverage can create substantial
+          risk. Learning on a demo account can help build
+          familiarity without risking real capital.
+        </p>
+
+        <div class="cp-next">
+          <h2>Continue Learning</h2>
+
+          <p>
+            Now that you understand leverage and margin,
+            continue with the basic mechanics of forex trading
+            and learn how trading costs and price movements
+            affect a position.
+          </p>
+
+          <div class="cp-next-links">
+            <a href="./">Explore Forex Basics →</a>
+
+            <a href="./how-forex-trading-works.html">
+              Review: How Does Forex Trading Work? →
+            </a>
+
+            <a href="./what-is-a-forex-spread.html">
+              Learn: What Is Spread in Forex?
+            </a>
+
+            <a href="./currency-pairs.html">
+              Review: Currency Pairs
+            </a>
+
+            <a href="./what-is-forex.html">
+              Start: What Is Forex?
+            </a>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="cp-sidebar" aria-label="Article navigation and note">
+
+        <nav class="cp-toc" aria-label="On this page">
+          <h2>On this page</h2>
+
+          <ol>
+            <li><a href="#meaning">What leverage means</a></li>
+            <li><a href="#ratio">Leverage ratios</a></li>
+            <li><a href="#margin">Margin and leverage</a></li>
+            <li><a href="#calculation">Calculating leverage</a></li>
+            <li><a href="#exposure">Position exposure</a></li>
+            <li><a href="#profit-loss">Profit and loss</a></li>
+            <li><a href="#effective">Effective leverage</a></li>
+            <li><a href="#risks">Leverage risks</a></li>
+            <li><a href="#risk-management">Risk management</a></li>
+            <li><a href="#mistakes">Common mistakes</a></li>
+            <li><a href="#practice">Knowledge check</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
+          </ol>
+        </nav>
+
+        <div class="cp-sidebar-note">
+          <strong>Learning reminder</strong>
+          <p>
+            Leverage increases exposure, not certainty.
+            Understand your position size, margin and
+            potential loss before entering a trade.
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <a class="logo footer-logo" href="../">Forex <span>Clarity</span></a>
+      <p>Clear and practical forex education.</p>
+    </div>
+
+    <div>
+      <h3>Learn</h3>
+      <a href="./">Forex Basics</a>
+      <a href="./what-is-forex.html">What Is Forex?</a>
+      <a href="./how-forex-trading-works.html">How Forex Trading Works</a>
+      <a href="./currency-pairs.html">Currency Pairs</a>
+      <a href="./what-is-a-forex-spread.html">Forex Spread</a>
+      <a href="./what-is-leverage-in-forex.html">Forex Leverage</a>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="../#analysis">Technical Analysis</a>
+      <a href="../#risk">Risk Management</a>
+      <a href="../about/">About</a>
+    </div>
+
+    <div>
+      <h3>Information</h3>
+      <p>Educational content only.</p>
+      <p>Not financial advice.</p>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Forex Clarity. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
