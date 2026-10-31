@@ -196,96 +196,151 @@
         </div>
 
 
-        <div class="chart">
+        
+<div
+  class="chart"
+  role="img"
+  aria-label="Educational forex candlestick chart showing price movement, resistance, market structure and support."
+>
 
-          <div class="chart-line chart-line-one"></div>
+  <div class="chart-level resistance">
+    <span>Resistance</span>
+  </div>
 
-          <div class="chart-line chart-line-two"></div>
+  <div class="chart-level structure">
+    <span>Market Structure</span>
+  </div>
 
+  <div class="chart-level support">
+    <span>Support</span>
+  </div>
 
-          <div class="chart-level resistance">
-            <span>
-              Resistance
-            </span>
-          </div>
+  <svg
+    class="chart-svg candlestick-svg"
+    viewBox="0 0 600 300"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
 
+    <defs>
+      <linearGradient id="candleGlow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#22c55e" stop-opacity="0.12"/>
+        <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
 
-          <div class="chart-level structure">
-            <span>
-              Structure
-            </span>
-          </div>
+    <!-- Subtle chart background -->
+    <path
+      d="M0 250 L600 250 L600 300 L0 300 Z"
+      fill="url(#candleGlow)"
+    />
 
+    <!-- Candle 01 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="45" y1="205" x2="45" y2="258"/>
+      <rect class="candle-body" x="37" y="218" width="16" height="25" rx="2"/>
+    </g>
 
-          <div class="chart-level support">
-            <span>
-              Support
-            </span>
-          </div>
+    <!-- Candle 02 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="77" y1="190" x2="77" y2="235"/>
+      <rect class="candle-body" x="69" y="202" width="16" height="21" rx="2"/>
+    </g>
 
+    <!-- Candle 03 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="109" y1="175" x2="109" y2="226"/>
+      <rect class="candle-body" x="101" y="190" width="16" height="22" rx="2"/>
+    </g>
 
-          <svg
-            class="chart-svg"
-            viewBox="0 0 600 300"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
+    <!-- Candle 04 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="141" y1="180" x2="141" y2="235"/>
+      <rect class="candle-body" x="133" y="196" width="16" height="27" rx="2"/>
+    </g>
 
-            <defs>
+    <!-- Candle 05 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="173" y1="160" x2="173" y2="214"/>
+      <rect class="candle-body" x="165" y="175" width="16" height="25" rx="2"/>
+    </g>
 
-              <linearGradient
-                id="chartArea"
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="1"
-              >
+    <!-- Candle 06 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="205" y1="145" x2="205" y2="205"/>
+      <rect class="candle-body" x="197" y="158" width="16" height="28" rx="2"/>
+    </g>
 
-                <stop
-                  offset="0%"
-                  stop-color="rgba(74,144,226,0.28)"
-                />
+    <!-- Candle 07 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="237" y1="155" x2="237" y2="215"/>
+      <rect class="candle-body" x="229" y="175" width="16" height="25" rx="2"/>
+    </g>
 
-                <stop
-                  offset="100%"
-                  stop-color="rgba(74,144,226,0)"
-                />
+    <!-- Candle 08 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="269" y1="125" x2="269" y2="185"/>
+      <rect class="candle-body" x="261" y="140" width="16" height="30" rx="2"/>
+    </g>
 
-              </linearGradient>
+    <!-- Candle 09 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="301" y1="115" x2="301" y2="170"/>
+      <rect class="candle-body" x="293" y="130" width="16" height="22" rx="2"/>
+    </g>
 
-            </defs>
+    <!-- Candle 10 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="333" y1="120" x2="333" y2="175"/>
+      <rect class="candle-body" x="325" y="140" width="16" height="25" rx="2"/>
+    </g>
 
+    <!-- Candle 11 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="365" y1="95" x2="365" y2="155"/>
+      <rect class="candle-body" x="357" y="110" width="16" height="30" rx="2"/>
+    </g>
 
-            <path
-              class="chart-area"
-              d="M0 250
-                 C45 230 65 235 95 205
-                 S145 150 180 175
-                 S230 220 260 145
-                 S315 110 350 130
-                 S390 80 425 105
-                 S465 170 500 125
-                 S545 70 600 45
-                 L600 300
-                 L0 300 Z"
-            />
+    <!-- Candle 12 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="397" y1="80" x2="397" y2="145"/>
+      <rect class="candle-body" x="389" y="100" width="16" height="28" rx="2"/>
+    </g>
 
+    <!-- Candle 13 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="429" y1="105" x2="429" y2="170"/>
+      <rect class="candle-body" x="421" y="118" width="16" height="30" rx="2"/>
+    </g>
 
-            <path
-              class="chart-path"
-              d="M0 250
-                 C45 230 65 235 95 205
-                 S145 150 180 175
-                 S230 220 260 145
-                 S315 110 350 130
-                 S390 80 425 105
-                 S465 170 500 125
-                 S545 70 600 45"
-            />
+    <!-- Candle 14 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="461" y1="125" x2="461" y2="185"/>
+      <rect class="candle-body" x="453" y="140" width="16" height="28" rx="2"/>
+    </g>
 
-          </svg>
+    <!-- Candle 15 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="493" y1="90" x2="493" y2="155"/>
+      <rect class="candle-body" x="485" y="105" width="16" height="32" rx="2"/>
+    </g>
 
-        </div>
+    <!-- Candle 16 -->
+    <g class="candle-down">
+      <line class="candle-wick" x1="525" y1="75" x2="525" y2="135"/>
+      <rect class="candle-body" x="517" y="88" width="16" height="25" rx="2"/>
+    </g>
+
+    <!-- Candle 17 -->
+    <g class="candle-up">
+      <line class="candle-wick" x1="557" y1="55" x2="557" y2="120"/>
+      <rect class="candle-body" x="549" y="70" width="16" height="32" rx="2"/>
+    </g>
+
+  </svg>
+
+</div>
+
 
 
         <div class="market-card-footer">
