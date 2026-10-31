@@ -1475,7 +1475,7 @@ a {
   color: var(--accent);
 }
 
-```css
+
 /* ================================
    Team Section
    ================================ */
@@ -1637,5 +1637,43 @@ article.section-light .container a {
 
 article.section-light .container a:hover {
   text-decoration-thickness: 2px;
+}
+
+/* ================================
+   FOREX CLARITY - CANDLESTICK CHART
+================================ */
+
+.candlestick-svg {
+  overflow: visible;
+}
+
+.candle-wick {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.candle-body {
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.candle-up .candle-wick {
+  stroke: #22c55e;
+}
+
+.candle-up .candle-body {
+  fill: #22c55e;
+  stroke: #4ade80;
+}
+
+.candle-down .candle-wick {
+  stroke: #ef5b65;
+}
+
+.candle-down .candle-body {
+  fill: #ef5b65;
+  stroke: #fb7185;
 }
 
