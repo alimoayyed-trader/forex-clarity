@@ -1676,4 +1676,62 @@ article.section-light .container a:hover {
   fill: #ef5b65;
   stroke: #fb7185;
 }
+/* ================================
+   START LEARNING SECTION
+================================ */
 
+.start-learning-section {
+  padding: 55px 0;
+  background: #ffffff;
+}
+
+.start-learning-content {
+  position: relative;
+  overflow: hidden;
+  padding: 55px 60px;
+  border: 1px solid #d6e6ff;
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(37, 99, 235, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #f0f6ff,
+      #ffffff
+    );
+
+  box-shadow: var(--shadow);
+}
+
+.start-learning-content h2 {
+  max-width: 650px;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.start-learning-content > p:not(.eyebrow) {
+  max-width: 650px;
+  margin-top: 15px;
+  color: var(--text-soft);
+  font-size: 16px;
+}
+
+.start-learning-content .button {
+  margin-top: 25px;
+}
+
+@media (max-width: 560px) {
+  .start-learning-section {
+    padding: 35px 0;
+  }
+
+  .start-learning-content {
+    padding: 32px 24px;
+    border-radius: 18px;
+  }
+}
