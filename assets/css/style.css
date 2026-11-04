@@ -323,3 +323,34 @@ article.section-light .container a:hover { text-decoration-thickness: 2px; }
   }
 }
 
+/* =================================
+   CLICKABLE ROADMAP ITEMS
+   ================================= */
+
+.roadmap-list li > a {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.roadmap-list li > a h3,
+.roadmap-list li > a p {
+  color: inherit;
+}
+
+.roadmap-list li:has(> a) {
+  cursor: pointer;
+}
+
+.roadmap-list li > a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+.roadmap-list li > a:hover h3 {
+  color: var(--accent);
+}
+
